@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos JavaScript</title>
+  <meta name="description" content="Bienvenidos a la web de pratica de JavaScript.">
+  <!--Color para barra de navegacion-->
+  <meta name="theme-color" content="#F1F500">
+  <!--Sitio optimizdo para movil-->
+  <meta name="MobileOptimizer" content="width">
+  <!--Sitio amistoso para movil-->
+  <meta name="HandheldFriendly" content="true">
+  <!--Meta etiquetas para los dispositivos de Apple-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!--Favicon-->
+  <link rel="shortcut icon" href="./image/js.png" type="image/png">
+  <!--Icono para pantalla en dispositivos-->
+  <link rel="apple-touch-icon" href="./img/js.png">
+  <link rel="apple-touch-startup-image" href="./img/js_32.png">
+  <!--Manifest-->
+  <link rel="manifest" href="./manifest.json">
+  <!--Google Fonts Roboto-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+  
+
+  <style>
+    /*Reset*/
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    /*General*/
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    h1, h2, h3 {
+      text-align: center;
+      margin: 1.5rem 0rem;
+    }
+    p {
+      font-size: 1.25rem;
+      margin-top: 0.50rem;
+      line-height: 2.0;
+    }
+    header, footer {
+      padding: 2rem;
+      background-color: #f1f500;
+      text-align: center;
+    }
+    main {
+      padding: 2.75rem;
+    }
+    /*Sections*/
+    #temas-vistos, #ejercicios-practicos {
+      margin: 2rem 0.25rem; 
+      border-radius: 14px;
+      border: 2px solid #727272;  
+      padding: 1rem;  
+      box-shadow: -4px 4px 2px #c4c0c0;
+    }
+    /*List*/
+    ol {
+      list-style-position: inside;
+    }
+    ul {
+      padding: 0.25rem 1.50rem;
+      font-size: 1.25rem;
+    }
+    ul li, ol li {
+      line-height: 1.8;
+      font-size: 1.25rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Fundamentos JavaScript</h1>
+    <p>Se puede ver todo en el navegador, inspeccionando con F12 viendo en <strong>Console</strong> .</p>
+  </header>
+  <main>
+    <!----Seccion temas vistos------>
+    <section id="temas-vistos">
+      <h2>Temas vistos </h2>
+      <ol>
+        <li>Tipo de datos primitivos :
+          <ul>
+            <li>Variables : <strong>var</strong> vs <strong>let</strong> , variables globales y de bloque. Constantes ( <strong>const</strong> ).</li>
+            <li>Cadenas de texto: propiedades y métodos .</li>
+            <li>Concatenación e Interpolación de variables ( Template Strings ) .</li>
+            <li>Numbers: métodos y casteo . </li>
+            <li>Booleans : truthy y falsy . </li>
+            <li>Undefined, null, NaN .</li>
+          </ul>
+        </li>
+
+        <li>Tipo de datos complejos :
+          <ul>
+            <li> Funciones : función declarada y función expresada.</li>
+            <li> Arrays : métodos. </li>
+            <li> Objetos. </li>
+          </ul>
+        </li>
+
+        <li>Operadores : 
+          <ul>
+            <li>Aritméticos .</li>
+            <li>Relacionales , Comparación ( == ó ===) , Incremento / Decremento , Unario.</li>
+            <li>Lógicos</li>
+          </ul>
+        </li>
+
+        <li> Condicionales : 
+          <ul>
+            <li>if / else </li>
+            <li> if - else if - else </li>
+            <li> operador ternario </li>
+            <li>switch</li>
+          </ul>
+        </li>
+
+        <li> Ciclos:
+          <ul>
+            <li>while </li>
+            <li>do / while</li>
+            <li>for </li>
+          </ul>
+        </li>
+        <li>Manejo de errores (try / catch / finally)</li>
+        <li>Break & Continue</li>
+        <li>Destructuración</li>
+        <li>Objetos literales</li>
+        <li>Parámetros REST & Operador Spread</li>
+        <li>Arrow function</li>
+        <li>POO : Prototipos y herencia. Clases : Métodos estáticos, getters y setters</li>
+        <li>Objetos:  
+          <ul>
+            <li>Console : .log(), .info(), .warn(), .clear(), .dir(),.group(), .groupCollapsed(), .table(), .time(), .count(), .assert()</li>
+            <li>Date: .Date(), getDate(), .getDay(), .getMonth(), .getFullYear(), .getHours(), .getMinutes(), .getSeconds(), .getMilliseconds(), .toString(), .toDateString(), .toLocaleString(), .toLocaleDateString(), .toLocaleTimeString(), .getTimezoneOffset(), .getUTCDate(), .getUTCHours(), Date.now() </li>
+            <li>Math: ,abs(), .ceil(), .floor(), .round(), .sqrt(), .pow(), .sign(), .random(), .round()</li>
+          </ul>
+        </li>
+        <li>Operador de cortocircuito : 
+          <ul>
+            <li>|| : OR</li>
+            <li>&& : AND</li>
+          </ul>
+        </li>
+        <li>Alert, Confirm, Prompt</li>
+        <li>Expresiones regulares
+          <ul>
+            <li>banderas</li>
+            <li>.test()</li>
+            <li>.exec()</li>
+          </ul>
+        </li>
+        <li> Funciones Anónimas Autoejecutables</li>
+      </ol>
+    </section>
+    <!---Seccion ejercicios practicos------->
+    <section id="ejercicios-practicos">
+      <h2> Ejercicios prácticos</h2>
+      <ol>
+        <li>Ejercicios de lógica de programación: 
+          <ul>
+            <li> 
+              <a href="https://github.com/eugenia1984/JS-exercises" target="blank" rel="noopener"> 👉🏼 Repositorio de Git Hub</a> 
+            </li>
+            <li> 
+              <a href="https://eugenia1984.github.io/JS-exercises/" target="blank" rel="noopener"> 👉🏼 Verlo en web</a> 
+            </li>
+          </ul>
+        </li>
+        <li>Ejercicios del DOM: 
+          <ul>
+            <li> 
+              <a href="https://github.com/eugenia1984/ejercicios-dom" target="blank" rel="noopener"> 👉🏼 Repositorio de Git Hub</a> 
+            </li>
+            <li>
+              <a href="https://eugenia1984.github.io/ejercicios-dom/" target="blank" rel="noopener">  👉🏼 Verlo en Web</a>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Práctica de <a href="http://www.linkedin.com/in/maríaeugeniacosta" target="_blank" rel="noopener noreferrer"> María Eugenia Costa</a></p>
+  </footer>
+  <script src="./js/basicos.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
