@@ -28,7 +28,9 @@ Topics:
 * AJAX
 * API Rest
 
-:computer: **extra** :  PWA (more information in teh folder teoría)
+:computer: **extra** :  PWA (more information in tha folder teoría)
+
+:computer: You can take a look here https://eugenia1984.github.io/JS-complete/
 
 ## Exercises :computer:
 
@@ -88,6 +90,8 @@ Temas vistos:
 * API REST
 
 :computer: **extra** : implementé PWA (más información en la carpeta de teoría)
+
+.compueter: Podes verla acá https://eugenia1984.github.io/JS-complete/
 
 ## Ejercicios :computer:
 
