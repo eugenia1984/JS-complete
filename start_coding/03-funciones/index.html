@@ -95,6 +95,26 @@
     <section>
       <h2>EJERICIO 3</h2>
       <p>Crear un programa que convierte la temperatura de grados Celsius a Farenheit y viceversa. El usuario ingresará la temperatura y a que unidad la quiere convertir.</p>
+      <p>Forma de resolverlo:</p>
+      <code>const convertTemperature = (temperature , target) => {</code>
+
+      <code class="tabulado">const parseTemp = +temperature;</code>
+      <code class="tabulado"> const parseTarget = target.toLowerCase();</code>
+
+      <code class="tabulado"> if ( !parseTemp && parseTemp !== 0 ) {</code>
+      <code class="tabulado2">alert("El valor ingresado no es válido!");</code>
+      <code class="tabulado2">return;</code>
+      <code class="tabulado">}</code>
+
+      <code class="tabulado">if(parseTarget === "celsius") {</code>
+      <code class="tabulado2">return ((parseTemp - 32) * 5 ) / 9;</code>
+      <code class="tabulado">} else if (parseTarget == "farenheit") {</code>
+      <code class="tabulado2">return ((parseTemp * 9 ) / 5 + 32);</code>
+      <code class="tabulado"> } else {</code>
+      <code class="tabulado2">alert("El formato ingresado no es válido!");</code>
+      <code class="tabulado2">return;</code>
+      <code class="tabulado">}</code>
+      <code>}</code>
     </section>
     <hr>
     <section>
