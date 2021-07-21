@@ -51,3 +51,129 @@ if(isNumberPrime !== undefined) {
   if (isNumberPrime === true) alert("El número es primo!");
   else alert("El número no es primo!");
 }
+
+/************** EJERCICIO 3 **************/
+//Crear un programa que convierte la temperatura de grados Celsius a Farenheit y viceversa. El usuario ingresará la temperatura y a que unidad la quiere convertir
+// C => F ---- ( C * 9/5 ) + 32 
+// F => C ----- ( F - 32 ) * 5/9
+const convertTemperature = (temperature , target) => {
+
+  const parseTemp = +temperature;
+  const parseTarget = target.toLowerCase();
+
+  if ( !parseTemp && parseTemp !== 0 ) {
+    alert("El valor ingresado no es válido!");
+    return;
+  }
+
+  //evaluo el target, y en base al mismo paso a celsius o a farenheit
+  if(parseTarget === "celsius") { //paso de farenheit a celsius
+    return ((parseTemp - 32) * 5 ) / 9;
+  } else if (parseTarget == "farenheit") {
+    return ((parseTemp * 9 ) / 5 + 32);
+  } else {
+    alert("El formato ingresado no es válido!");
+    return;
+  }
+
+};
+
+// Pido al usuario la temperatura y la unidad a la que lo quiere pasar
+const temperature = prompt("ingresa la temperatura : ");
+const target= prompt("Ingresa a que unidad de medida la queres convertir (celsius / farenheit ) : ");
+//invoco a la función para hacer la conversion
+const response = convertTemperature(temperature, target);
+
+if(response !== undefined) {
+  alert(`La temperatura en ${target.toLowerCase()} es ${response}.`);
+}
+
+/****************** EJERCICIO 4 *****************/
+
+//Crear un programa para calcular el total de una compra. 
+//Para ello, se le tiene que pedir al usuario que inrese el precio de cada producto y, cuando ingrese la palabra total devolverle el total de la compra.
+
+const calculateTotal = () => {
+
+  let total = 0;
+  let subTotal;
+
+  do {
+    subTotal = prompt("Ingresa el valor del producto. Recuerda que para saber el total debes ingresar la palabra : total. ");
+    const parseSubtotal = +subTotal;
+    if(parseSubtotal){
+      total += parseSubtotal;
+    } else {
+      if(subTotal.toLowerCase() !== "total")
+        alert("El valor ingresado no es correcto!");
+    }
+  } while (subTotal.toLowerCase() !== "total");
+  
+  return total;
+};
+
+const response2 = calculateTotal();
+
+alert(response2);/************** EJERCICIO 3 **************/
+//Crear un programa que convierte la temperatura de grados Celsius a Farenheit y viceversa. El usuario ingresará la temperatura y a que unidad la quiere convertir
+// C => F ---- ( C * 9/5 ) + 32 
+// F => C ----- ( F - 32 ) * 5/9
+const convertTemperature = (temperature , target) => {
+
+  const parseTemp = +temperature;
+  const parseTarget = target.toLowerCase();
+
+  if ( !parseTemp && parseTemp !== 0 ) {
+    alert("El valor ingresado no es válido!");
+    return;
+  }
+
+  //evaluo el target, y en base al mismo paso a celsius o a farenheit
+  if(parseTarget === "celsius") { //paso de farenheit a celsius
+    return ((parseTemp - 32) * 5 ) / 9;
+  } else if (parseTarget == "farenheit") {
+    return ((parseTemp * 9 ) / 5 + 32);
+  } else {
+    alert("El formato ingresado no es válido!");
+    return;
+  }
+
+};
+
+// Pido al usuario la temperatura y la unidad a la que lo quiere pasar
+const temperature = prompt("ingresa la temperatura : ");
+const target= prompt("Ingresa a que unidad de medida la queres convertir (celsius / farenheit ) : ");
+//invoco a la función para hacer la conversion
+const response = convertTemperature(temperature, target);
+
+if(response !== undefined) {
+  alert(`La temperatura en ${target.toLowerCase()} es ${response}.`);
+}
+
+/****************** EJERCICIO 4 *****************/
+
+//Crear un programa para calcular el total de una compra. 
+//Para ello, se le tiene que pedir al usuario que inrese el precio de cada producto y, cuando ingrese la palabra total devolverle el total de la compra.
+
+const calculateTotal = () => {
+
+  let total = 0;
+  let subTotal;
+
+  do {
+    subTotal = prompt("Ingresa el valor del producto. Recuerda que para saber el total debes ingresar la palabra : total. ");
+    const parseSubtotal = +subTotal;
+    if(parseSubtotal){
+      total += parseSubtotal;
+    } else {
+      if(subTotal.toLowerCase() !== "total")
+        alert("El valor ingresado no es correcto!");
+    }
+  } while (subTotal.toLowerCase() !== "total");
+  
+  return total;
+};
+
+const response2 = calculateTotal();
+
+alert(response2);
