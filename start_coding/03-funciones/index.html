@@ -120,6 +120,29 @@
     <section>
       <h2>EJERICIO 4</h2>
       <p>Crear un programa para calcular el total de una compra. Para ello, se le tiene que pedir al usuario que inrese el precio de cada producto y, cuando ingrese la palabra total devolverle el total de la compra.</p>
+       <p>Forma de realizarlo: </p>
+
+      <code>const calculateTotal = () => {</code>
+
+      <code class="tabulado">let total = 0;</code>
+      <code class="tabulado">let subTotal;</code>
+
+      <code>do {</code>
+      <code class="tabulado"> subTotal = prompt("Ingresa el valor del producto. Recuerda que para saber el total debes ingresar la palabra : total. ");</code>
+      <code class="tabulado">const parseSubtotal = +subTotal;</code>
+      <code class="tabulado">if(parseSubtotal){</code>
+      <code class="tabulado2">total += parseSubtotal;</code>
+      <code class="tabulado">  } else {</code>
+      <code class="tabulado2">if(subTotal.toLowerCase() !== "total")</code>
+      <code class="tabulado3">alert("El valor ingresado no es correcto!");</code>
+      <code class="tabulado2">}</code>
+      <code class="tabulado">class="tabulado2"</code>
+      <code class="tabulado"> return total; </code>
+      <code>};</code>
+
+      <code>const response2 = calculateTotal();</code>
+
+      <code>alert(response2);</code>    
     </section>
  
 
