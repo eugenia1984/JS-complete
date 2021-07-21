@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start Coding :JS | modulo 3 : funciones</title>
+   <!--Google Font-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+   <!--favicon-->
+   <link rel="shortcut icon" href="./js.png" type="image/png">
+   <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    html{font-family: 'Open Sans', sans-serif;}
+    header, footer{background-color: #b0e1e2; padding: 2rem; text-align: center;}
+    main{padding: 2rem;}
+    h1, h2, h3{padding: 1rem;}
+    section{margin-bottom: 1.5rem 0.25rem;}
+    p{font-size: 16px; line-height: 2.0;}
+    ul{ padding: 1.25rem;}
+    ul li {line-height: 2.0;}
+    code{display: block; line-height: 2.0; font-size: 16px; font-weight: 600;}
+    code.tabulado{margin-left: 2rem;}
+    code.tabulado2{margin-left: 3rem;}
+    code.tabulado3{margin-left: 4rem;}
+    code.tabulado4{margin-left: 5rem;}
+    section{padding: 1rem 0.25rem;}
+    hr{margin: 1rem 0rem;}
+  </style>
+</head>
+<body>
+<!----Header---->
+  <header>
+    <h1>Start Coding : JavaScript </h1>
+    <h2>Módulo 3 : funciones </h2>
+  </header>
+<!----Main---->
+  <main>
+
+    <section>
+      <h2>EJERICIO 1</h2>
+      <p>Crear un programa que pida al usuario un número y le devuelva un mensaje indicando si el número es positivo, negativo o si es 0.</p>
+      <p>¿ Cómo lo resolví ?</p>
+      <code>const number = Number(prompt("Ingresa un numero para indicar si es positivo o negativo : "));</code>
+      <code>if (!number) {</code>
+      <code class="tabulado">alert("No ingresó un número válido");</code>
+      <code>} else {</code>
+      <code class="tabulado">if (number === 0) {      //si number es positivo</code> 
+      <code class="tabulado2">alert(`El número ${number} es cero.`);</code>  
+      <code class="tabulado"> } else if( number > 0){      //si number es positivo </code>
+      <code class="tabulado2">alert(`El número ${number} es positivo.`);</code>  
+      <code class="tabulado">} else {       //si number es negativo</code>
+      <code class="tabulado2">alert(`El número ${number} es negativo.`);</code>
+      <code class="tabulado">}</code>
+      <code>}</code>
+    </section>
+    <hr>
+    <section>
+      <h2>EJERICIO 2</h2>
+      <p>Crear un programa que pida un número al usuario y le devuelva un mensaje diciendo si el número es primo o no.</p>
+      <p>Los numeros primos tiene 4 divisores, 2 positivos y 2 negativos y son mayores que 1 (1 no es primo, hay que partir del 2). </p>
+      <p>¿ Cómo lo resolví ?</p>
+
+      <code>const isPrime = (number) => {</code>
+
+      <code class="tabulado">const parseNumber = +number;</code>
+
+      <code class="tabulado">if(!parseNumber && parseNumber !== 0) {</code> 
+      <code class="tabulado2"> alert("El valor ingresado no es un número."); </code>
+      <code class="tabulado2"> return;</code>
+      <code class="tabulado">}</code>
+
+      <code class="tabulado">if(parseNumber < 2) return false;</code>
+       
+      <code class="tabulado">for (let i = 2 ; i < parseNumber; i++) {</code>
+      <code class="tabulado2">if (parseNumber % i === 0 ) return false;  </code> 
+      <code class="tabulado">}</code> 
+      <code class="tabulado"> return true;</code>
+      <code>}</code>
+      
+      <code> const chosenNumber = prompt("Ingresa un número: ");</code>
+
+      <code>const isNumberPrime = isPrime(chosenNumber);</code>
+
+      <code>if(isNumberPrime !== undefined) {</code>
+      <code class="tabulado">if (isNumberPrime === true) alert("El número es primo!");</code>
+      <code class="tabulado">else alert("El número no es primo");</code>
+
+      <code>}</code>
+      
+    </section>
+    <hr>  
+    <section>
+      <h2>EJERICIO 3</h2>
+      <p>Crear un programa que convierte la temperatura de grados Celsius a Farenheit y viceversa. El usuario ingresará la temperatura y a que unidad la quiere convertir.</p>
+    </section>
+    <hr>
+    <section>
+      <h2>EJERICIO 4</h2>
+      <p>Crear un programa para calcular el total de una compra. Para ello, se le tiene que pedir al usuario que inrese el precio de cada producto y, cuando ingrese la palabra total devolverle el total de la compra.</p>
+    </section>
+ 
+
+  </main>
+<!----Footer---->
+  <footer>
+    <h3>Práctica de <a href="http://www.linkedin.com/in/maríaeugeniacosta" target="_blank" rel="noopener noreferrer"> María Eugenia Costa </a> </h3>
+  </footer>
+<script src="./script.js"></script>
+</body>
+</html>

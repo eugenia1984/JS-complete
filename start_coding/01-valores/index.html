@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Start Coding | modulo 1 : valores</title>
+  <!--Favicon-->
+  <link rel="shortcut icon" href="./image/js.png" type="image/png">
+  <!--Google Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    html{font-family: 'Open Sans', sans-serif;}
+    header, footer{background-color: #b0e1e2; padding: 2rem;}
+    main{padding: 2rem;}
+    h1, h2, h3{padding: 1rem;}
+    section{margin-bottom: 1.5rem;}
+    p{font-size: 16px; line-height: 2.0;}
+    code {display:block;  line-height: 2.0; font-size: 16px; font-weight: 600;}
+    code.tabulacion{margin-left: 1rem;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Start Coding: JavaScript</h1>
+    <h2> Modulo 1: Valores</h2>
+  </header>
+  <main>
+  <section>
+    <h2>Expresión vs declaración</h2>
+    <h3>Expresión</h3>
+    <p>Produce un valor y puede ser escrita en cualquier lugar donde se espere un valor</p>
+    <code>let miVariable = 3</code>
+    <code>miVariable</code>
+    <code>2 + 3</code>
+    <code>funcion saludar(){</code>
+    <code class="tabulacion">return "Hola"</code>
+    <code>}</code> 
+  </section>
+  <hr>
+  <section>
+    <h3>Declaración</h3>
+    <p>Ejecuta una acción, sin producir valor.</p>
+    <p>Puede ser reemplazado por una expresión.</p>
+    <code>if (miVariable === true) {</code>
+    <code class="tabulacion">console.log('verdadero');</code>
+    <code>} else {</code>
+    <code class="tabulacion">console.log('falso');</code>
+    <code>}</code>
+  </section>
+  <hr>  
+  <section>
+    <h2>Métodos del navegador</h2>
+    <h3>Alert</h3>
+    <p>Bloquea todo lo que viene después hasta que no se haga click en ok.</p>
+    <code>alert("Hola mundo");</code>
+    <h3>Prompt</h3>
+    <p>Abre un input para que el usuario ingresa valores y yo pueda gaurdar esos valores.</p>
+    <code>prompt("Ingresa tu nombre: ");</code>
+    <h3>Confirm</h3>
+    <p>Devuelve un booleano en True si hacen click en ok y false si hacen click en cancel.</p>
+    <code>confirm("Estas seguro que deseas continuar ?");</code>
+  </section>
+  <hr>
+  <section>
+    <h2>Ejercicios</h2>
+    <aside>
+      <h3>Ejercicio 1</h3>
+      <p>Pedir al usuario que ingrese su nombre. Guardar ese nombre en una variable y utilizarla para saludar al usuario (por ejemplo: Hola Alexis).</p>
+      <code>const firstName = prompt("Ingresa tu nombre : ");</code>
+      <code>if ( firstName.length == 0 ) {</code>
+      <code class="tabulacion">alert("No ingreso un nombre");</code>
+      <code>} else {</code>
+      <code class="tabulacion"> alert(`Hola ${firstName}`);</code>
+      <code>}</code>
+    </aside>
+    <aside>
+      <h3>Ejercicio 2</h3>
+      <p>Pedirle a un usuario que ingrese dos números y devolverle la suma de dichos números.</p>
+      <code>const firstNumber = Number(prompt("Ingresa un número : "));</code>
+      <code>const secondNumber = Number(prompt("Ingresa otro número : "));</code>
+      <code>alert(`La suma de ${firstNumber} y ${secondNumber} es: ${firstNumber + secondNumber}`);  </code>
+    </aside>
+    <aside>
+      <h3>Ejercicio 3</h3>
+      <p>Pedirle a un usuario que ingrese dos números y devolverle el doble de la suma de dichos números.</p>
+      <code>alert(`El doble de la suma de ${firstNumber} y ${secondNumber} es:  ${ (firstNumber + secondNumber) * 2 }`);</code>
+    </aside>
+    <aside>
+      <h3>Ejercicio 4</h3>
+      <p>Pedirle al usuario qie ingrese el ancho y alto de una habitación y calcula la superficie.</p>
+      <code>const width = Number(prompt("Ingresa el ancho de la habitación: "));</code>
+      <code>const height = Number(prompt("Ingresa el alto de la habitación: "));</code>
+      <code>alert(`La superficie de la habitación es de: ${width * height}`); </code>
+    </aside>
+    <aside>
+      <h3>Ejercicio 5</h3>
+      <p>Pedirle al usaurio su nombre y devolverle el apellido todo en minúscula.</p>
+      <code>const lastName = prompt("Ingrese su apellido : ");</code>
+      <code>alert(`Su apellido en minúsula es: ${lastName.toLowerCase()}`);</code>
+    </aside>
+    <aside>
+      <h3>Ejercicio 6</h3>
+      <p>Pedirle al usuario que ingrese su apellido y devolverle el apellido todo en mayúscula.</p>
+      <code>alert(`Su apellido en minúsula es: ${lastName.toUpperCase()}`);</code>
+
+    </aside>
+    <aside>
+      <h3>Ejercicio 7</h3>
+      <p>Pedirle al usaurio el nombre, el apellido y la edad. Mostrar el siguiente mensaje:</p>
+      <p>Nombre : aca_el_nombre</p>
+      <p>Apellido: aca_el_apellido</p>
+      <p>Edad: aca_la_edad</p>
+      <code>const age= Number(prompt("Ingrese la edad: "));</code>
+      <code>alert(`</code>
+      <code>Nombre: ${firstName}</code>
+      <code>Apellido: ${lastName}</code>
+      <code>Edad: ${age}`);</code>
+    </aside>
+  </section>
+  <hr>
+  <section>
+    <p>Recordá que con el inspector del navegador en la sección de <strong>console</strong> podes ver el código de JavaScript en acción. </p>
+  </section>
+  <hr>
+  </main>
+  <footer>
+    <h3>Práctica de <a href="http://www.linkedin.com/in/maríaeugeniacosta" target="_blank" rel="noopener noreferrer"> María Eugenia Costa </a> </h3>
+  </footer>
+ 
+<script src="./script.js"></script>
+</body>
+</html>
