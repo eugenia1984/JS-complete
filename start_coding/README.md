@@ -111,6 +111,16 @@ Hay dos tipos:
 Si tenemos un signo **+** y valores de tipo Number y String, JavaScript convertirá a **String**.<br>
 En los otros casos, convertirá a Number.<br>
 
+
+## Truthy & Falsy
+
+**Truthy** se convierte a true <br>
+¿Cuáles son ? string, Number !== 0 , [] -arry vacío-, {} -objeto vacío- <br>
+
+**Falsy** se convierte a false. <br>
+¿Cuáles son ? 0, null, undefined, NaN, "", '', false <br>
+
+
 ## Operadores
 
 ### Aritméticos
