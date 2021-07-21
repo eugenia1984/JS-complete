@@ -32,6 +32,12 @@ Topics:
 
 :computer: You can take a look here https://eugenia1984.github.io/JS-complete/
 
+## Exercises :computer:
+
+1- index.html with the JavaScript File basicos.js <br>
+
+---
+
 ## Extra
 
 In the **start Coding** folder you will find JavaScript theory and exercises from the Start Coding Ai course from which I received a schoolarship for the JavaScript and Node module.
@@ -45,14 +51,14 @@ Watched topics:
    * Module 7: DOM
    * Module 8: Extras
    
-## Exercises :computer:
 
-1- index.html with the JavaScript File basicos.js <br>
+---
 
 ## Tech Stack 🛠️
 
 **HTML5**, **CSS3**, **JAVASCRIPT**
 
+---
 
 ## Please: 🎁
 
@@ -106,6 +112,14 @@ Temas vistos:
 
 :computer: Podes verla acá https://eugenia1984.github.io/JS-complete/
 
+
+## Ejercicios :computer:
+
+1- index.html con el archivo de javaScript basicos.js <br>
+
+
+---
+
 ## Extra
 
 En la carpeta **start Coding** van a encontrar teoría y ejercicios de JavaScript del curso de Start Coding Ai del cual obtuve beca para los módulo de JavaScript y Node<br>
@@ -119,14 +133,15 @@ Temas vistos:
    * Modulo 7 : DOM
    * Modulo 8 : Extras
 
-## Ejercicios :computer:
 
-1- index.html con el archivo de javaScript basicos.js <br>
+---
+
 
 ## Stack teconológico  🛠️
 
 **HTML5** , **CSS3** , **JAVASCRIPT**
 
+---
 
 ## Por favor: 🎁
 
