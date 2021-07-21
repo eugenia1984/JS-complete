@@ -16,7 +16,7 @@ Topics:
 * Control structures
 * Break & Continue
 * Destructuring
-* Rrest parameters and spread operator
+* Rest parameters and spread operator
 * Arrow Functions
 * Object-oriented programming
 * Language objects and functions
@@ -32,6 +32,19 @@ Topics:
 
 :computer: You can take a look here https://eugenia1984.github.io/JS-complete/
 
+## Extra
+
+In the **start Coding** folder you will find JavaScript theory and exercises from the Start Coding Ai course from which I received a schoolarship for the JavaScript and Node module.
+Watched topics:
+   * Module 1: Values
+   * Module 2: Flow control
+   * Module 3: Functions
+   * Module 4: Data structure
+   * Module 5: Asynchrony
+   * Module 6: API
+   * Module 7: DOM
+   * Module 8: Extras
+   
 ## Exercises :computer:
 
 1- index.html with the JavaScript File basicos.js <br>
@@ -91,7 +104,20 @@ Temas vistos:
 
 :computer: **extra** : implementé PWA (más información en la carpeta de teoría)
 
-.compueter: Podes verla acá https://eugenia1984.github.io/JS-complete/
+:computer: Podes verla acá https://eugenia1984.github.io/JS-complete/
+
+## Extra
+
+En la carpeta **start Coding** van a encontrar teoría y ejercicios de JavaScript del curso de Start Coding Ai del cual obtuve beca para los módulo de JavaScript y Node<br>
+Temas vistos:
+   * Modulo 1: Valores
+   * Modulo 2 : Control de flujos
+   * Modulo 3 : Funciones
+   * Modulo 4 : Estructura de datos
+   * Modulo 5 : Asincronía
+   * Modulo 6 : API
+   * Modulo 7 : DOM
+   * Modulo 8 : Extras
 
 ## Ejercicios :computer:
 
