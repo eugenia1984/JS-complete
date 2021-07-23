@@ -120,6 +120,18 @@ En los otros casos, convertirá a Number.<br>
 **Falsy** se convierte a false. <br>
 ¿Cuáles son ? 0, null, undefined, NaN, "", '', false <br>
 
+Me van a servir para validar, por ejemplo si ingreso un nombre: <br>
+
+Voy a validar que no sea null (es decir que no hizo click en cancelar) y voy a validar que el largo del string sea al menos 1 o más  ( es decir que no está vacío y no completó nada). <br>
+
+```
+const firstName = prompt("Ingresa tu nombre : ");
+
+if( !firstName !== null && firstName.lenght > 0) {
+   console.log(firstName);
+}
+```
+
 
 ## Operadores
 
