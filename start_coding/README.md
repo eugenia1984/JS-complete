@@ -174,7 +174,7 @@ Una *caja* donde guardamos un *valor* (un dato). <br>
 *palabra reservada* : **var** (alcance global, tiene el proble del hoisting cuando está dentro de una función, no se usa más) , **let** (alcance local al bloque donde es creada, permite reasignar el valor de la variable) , **const** (constante, debe ser declarada y tener el valor asignad todo en el mismo momento, no puedo luego reasignarle valor). <br> 
 Lo ideal es usar const salvo que necesitemos reasignarle valor entonces usamos let. <br>
 
-### Declaración d variables : nombres
+### Declaración de variables : nombres
 
 -Comienzan con: letra, $ ó _ <br>
 -No pueden comenzar por números <br>
@@ -501,6 +501,58 @@ lo mejor es usar *const* salvo que sea una variable que cambie en ese caso usar 
 ---
 
 # Modulo 4 : Estructura de datos
+
+
+# Arrays
+
+## ¿ Qué es?
+
+Es una colección ordenada de datos o de valores. <br>
+Cada valor tiene una posición específica, es similar a los lockers donde uno guarda las mochilas antes de entrar a un supermercado, que uno deja al mochila en el locker, y le dan un número, para cuando uno luego la pasa a buscar va a ese lugar especifico con su número de locker. <br>
+
+Puede almacenar distintos tipos de datos: numbers, String, otro array.
+
+## ¿  Cómo se declara ?
+
+```
+const miArray = [];
+
+//con el método constructor, instanciando
+const otroArray = new Array(); 
+```
+
+Dentro del array voy a ir teniendo elementos, y cada uno tieen su índice, se comienza con 0. Por esto es una lista ordenada, porque cada elemento tiene su índice. <br>
+
+Por ejemplo:
+
+```
+const fruit=["banana", "apple", "orange"];
+```
+
+## ¿ Cómo accedo a sus elementos ?
+
+Si quiero ver el primer elemento:<br>
+```
+fruit[0];   // banana
+```
+
+Si quiero ver el segundo elemento:<br>
+```
+fruit[1];  // apple
+```
+
+## ¿ Cómo modifico uno de sus alementos ? 
+
+```
+fruit[1]="coco";
+fruit=["banana", "coco", "orange"];
+```
+
+## ¿ Cómo se la longitud ?
+
+```
+console.log(fruit.length);  //3
+```
 
 ---
 
