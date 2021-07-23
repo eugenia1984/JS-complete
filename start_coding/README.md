@@ -683,6 +683,70 @@ console.log(fruit);  // [ "banana", "coco", "kiwi", "pear", "strawberry"]
 En este caso el array original No se modifica. <br>
 Lo que hace slice es qeu recorta el array, lo extrae y lo guarda en una nueva variable, pero el array original no lo modifica. <br>
 
+
+## ¿ Cómo puedo iterar un array?
+
+Puedo iterar sobre un array con un **for**: <br>
+
+```
+const miArray = [
+   "Alexis", 
+   "Juan", 
+   "Pedro", 
+   "Marcela", 
+   "Ana"
+];
+
+
+for(let i=0; i < miArray.length; i++) {
+  console.log(miArray[i]);
+}
+
+/*
+Se va a imprimir por consola:
+Alexis
+Juan
+Pedro
+marcela
+Ana
+*/
+```
+
+Puedo iterar sobre un array con un **forEach**. <br>
+Mi forEach va a recibir una arrow function que se va a lalamr en cada iteración. Va a recibir como parametro cada item de mi array y como segundo parámetro va a recibir el índice (el lugar que ocupa mi elemento en el array)<br>
+El segundo parámetro, index, es opcional, se puede poner o no. <br>
+
+```
+const miArray = [
+   "Alexis", 
+   "Juan", 
+   "Pedro", 
+   "Marcela", 
+   "Ana"
+];
+
+
+miArray.forEach( (item, index) => {
+   console.log(index);
+   console.log(item);
+});
+
+/*
+Se va a imprimir por consola:
+0
+Alexis
+1
+Juan
+2
+Pedro
+3
+4
+Marcela
+5
+Ana
+*/
+```
+
 ---
 
 # Modulo 5 : Asincronía
