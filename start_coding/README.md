@@ -132,6 +132,19 @@ if( !firstName !== null && firstName.lenght > 0) {
 }
 ```
 
+Como ambas validaciones en definitiva son falsy (false) entonces puedo hacer un chequeo if/else general entre todos los truthy y los falsy.<br>
+
+Y hago +firstName para que si me ingresa un 0, no me lo toma como un String, sino que me lo convierte al numero 0 que es un falsy. Esta validación sería para corroborar si se ingresa un NUMERO.<br>
+
+```
+const firstName = prompt("Ingresa tu nombre : ");
+
+if( +firstName) {
+   console.log(`Esto es truthy, ${firstName}`);
+} else {
+   console.log(`Esto es falsy, ${+firstName}`);
+}
+```
 
 ## Operadores
 
