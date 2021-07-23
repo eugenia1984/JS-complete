@@ -554,6 +554,135 @@ fruit=["banana", "coco", "orange"];
 console.log(fruit.length);  //3
 ```
 
+## ¿ Cómo accedo al último elemento de mi array ?
+
+Como los índices empiezan en 0, siempre mis índices van a ser el número anterior inmediato a el núemro que representa mi cantidad de elementos.<br>
+Si tengo dos elementos voy a tener indice: 0 , 1. <br>
+Entonces lo que voy a buscar como índice de mi último elemento es la longitud de mi array menos 1. <br>
+
+```
+console.log(fruit[fruit.length -1]);  //orange
+```
+
+## ¿ Cómo accedo a un elemento de mi array sin saber en qué índice está?
+
+```
+const elemento = "banana";
+```
+
+JavaScript tiene el método **indexof()**. <br>
+
+```
+const index = fruit(indexOf(elemento));  //0
+```
+
+En el caso de que el elemento que esté buscando **no** esté en mi array voy a tener **undefined**, porque el método **indexOf()** me está devolviendo un **-1** que va a ser *undefined* porque no voy a tener el índice -1 de mi array. <br>
+
+Puedo combinar el indexOf para encontrar un elemento y puedo reemplazarlo  con **=**. <br>
+
+```
+fruit[fruit.indexOf("orange")] = "kiwi";
+```
+
+## ¿ Cómo agrego elementos en mi array ?
+
+### Para agregar un elemento al final del array
+
+**.push()** <br>
+```
+//[ "banana", "coco", "kiwi"]
+fruit.push("apple");
+//[ "banana", "coco", "kiwi", "apple"]
+```
+
+*.push()* me va a devolver la nueva longitud del array una vez que el elemento ya es agregado. <br>
+```
+//fruit = [ "banana", "coco", "kiwi"];
+const newLength = fruit.push("apple");  //4
+```
+
+Este método me modifica el array original. <br>
+
+### Para agregar un elemento al principio de mi array
+
+**unshift()**<br>
+```
+//fruit = [ "banana", "coco", "kiwi"];
+fruit.unshift("pear");
+//fruit = ["pear", "banana", "coco", "kiwi"];
+const newLength = fruit.unshift("strawberry"); //5
+```
+
+*.unshift()* me va a agregar el elemento al principio del array y me va a dar la longitud ya con ese elemento agregado. <br>
+
+Este método me modifica el array original. <br>
+
+## ¿ Cómo elimino elementos de mi array ?
+
+### Para eliminar el último elemento de mi array
+
+**.pop()** <br>
+```
+//gruit = [ "banana", "coco", "kiwi", "apple"];
+fruit.pop();
+//[ "banana", "coco", "kiwi"]
+```
+
+Un dato interesante es que *.pop()* me devuelve el valor que elimino, por ejemplo: <br>
+
+```
+const removedElement = fruit.pop();
+console.log(removedElement);  // apple
+```
+
+Es útil si necesitamos remover un elemento y guardarlo en una variable. <br>
+
+Este método me modifica el array original. <br>
+
+### Para eliminar el primer elemento de mi array
+
+**shift()** <br>
+```
+// fruit = [ "banana", "coco", "kiwi"];
+const removedElement = fruit.shift();  //banana
+//fruit = ["coco", "kiwi"];
+```
+Me queda el primer elemento removido alamcenado en la variable *removedElement*. <br>
+
+Este método me modifica el array original. <br>
+
+
+### método .splice()
+
+Para remover uan serie de elementos de mi array. <br>
+*splice( start:number , deleteCount: number)*. <br>
+El primer número me indica desde qué posición (índice) voy a comenzar a eliminar. <br>
+El segundo número me idica cuántos elementos voy a eliminar en total. <br>
+
+```
+// fruit = [ "banana", "coco", "kiwi", "pear", "strawberry"];
+console.log(fruit.splice(1,2));   //["coco", "kiwi"]
+console.log(fruit);   //  [ "banana",  "pear", "strawberry"];
+```
+En este caso, console.log(fruit.splice(1,2)), me va a devolver un array con los elementos que elimine. <br>
+
+Este método me modifica el array original. <br>
+
+### método .slice()
+
+Lo que hacer es **recortar** un array.<br>
+*.slice(num1, num2)* donde num1 es el índice desde donde comienzo a cortar, y num2 es ídice hasta el que voy a cortar (este último índice no lo incluyo, no lo corto) <br>
+
+```
+// fruit = [ "banana", "coco", "kiwi", "pear", "strawberry"];
+const newArray = fruit.slice(1,2);
+console.log(newArray);  [ "banana", "kiwi", "pear", "strawberry"]
+console.log(fruit);  // [ "banana", "coco", "kiwi", "pear", "strawberry"]
+```
+
+En este caso el array original No se modifica. <br>
+Lo que hace slice es qeu recorta el array, lo extrae y lo guarda en una nueva variable, pero el array original no lo modifica. <br>
+
 ---
 
 # Modulo 5 : Asincronía
