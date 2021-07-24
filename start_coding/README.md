@@ -570,10 +570,10 @@ console.log(fruit[fruit.length -1]);  //orange
 const elemento = "banana";
 ```
 
-JavaScript tiene el método **indexof()**. <br>
+JavaScript tiene el método **indexOf()**. <br>
 
 ```
-const index = fruit(indexOf(elemento));  //0
+const index = fruit.indexOf(elemento);  //0
 ```
 
 En el caso de que el elemento que esté buscando **no** esté en mi array voy a tener **undefined**, porque el método **indexOf()** me está devolviendo un **-1** que va a ser *undefined* porque no voy a tener el índice -1 de mi array. <br>
