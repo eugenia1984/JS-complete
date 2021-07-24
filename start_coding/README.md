@@ -652,7 +652,7 @@ Me queda el primer elemento removido alamcenado en la variable *removedElement*.
 Este método me modifica el array original. <br>
 
 
-### método .splice()
+###  .splice()
 
 Para remover uan serie de elementos de mi array. <br>
 *splice( start:number , deleteCount: number)*. <br>
@@ -668,7 +668,7 @@ En este caso, console.log(fruit.splice(1,2)), me va a devolver un array con los 
 
 Este método me modifica el array original. <br>
 
-### método .slice()
+### .slice()
 
 Lo que hacer es **recortar** un array.<br>
 *.slice(num1, num2)* donde num1 es el índice desde donde comienzo a cortar, y num2 es ídice hasta el que voy a cortar (este último índice no lo incluyo, no lo corto) <br>
