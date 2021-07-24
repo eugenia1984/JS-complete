@@ -747,6 +747,104 @@ Ana
 */
 ```
 
+
+### map
+
+El método *map*, nos da la posibilidad de iterar, de ejecutar uan función por cada elemento del array y nos devuelve un array nuevo, que teien en cada posición lo que está en el return de la función.<br<>>
+
+1-Creo un nuevo array. <br>
+2- Aggarro el array (miArray) que tengo de los nombres y con un forEach itero por cada uno de los elementos.<br>
+3- Croe un String en el cual voy concatenando la palbra nombre con cada nosmbre de mi array.<br>
+4- Ese nuevo String le hago un .push() en el Array newString.<br>
+5- Al finalizar el forEach newString ya los tiene sumados.<br>
+
+```
+const newArray =  [];
+
+miArray.forEach( (name) => {
+   const newString = `Nombre: ${name}`;
+   newArray.push(newString);
+});
+
+console.log(newArray);
+```
+
+Si ahora aplico mi método **map** , que al igual que forEach itera por ada uno de los elemeton, pero a diferencia del forEach map retorna un nuevo array ya modificado.<br>
+Hago lo msimo de recién pero con **map**.```
+
+
+```
+const newArrayWithMap = miArray.map( (name) =>  return `Nombre: $ {name}`;);
+
+console.log(newArrayWithMap)
+```
+
+Cuando se hace la iteración cada elemento va a tener lo que retorna la función. <br>
+Si la función no retorna nada, cada elemento va a ser *undefined*. <br>
+
+### filter
+
+
+Nos permite **filtrar** .<br>
+Nos devuelve un nuevo array.<br>
+
+
+Por ejemplo tengo este array (namesArray) y quiero filtrar. <br>
+*filter* va a recibir un arrow function que va a tener una cierta condición, si a condición es true va al nuevo array, si la condición no se cumple el elemento queda fuera del array. Al final me retorna un array con el resultado (con todos los elementos que me dieron true).<br>
+Si no encuentra el elemento me devuelve un *array vacío*. <br>
+
+```
+const namesArray = [
+   "Alexis", 
+   "Juan", 
+   "Pedro", 
+   "Marcela", 
+   "Ana",
+   "Alexis",
+   "Ana",
+];
+
+const filterArray = namesArray.filter( (name) => name ==== "Alexis" );
+
+const filterArray2 = namesArray.filter( (name) => name ==== "Maria" );
+
+console.log(filterArray);  // (2) ["Alexis", "Alexis"]
+console.log(filterArray2);  //  [] poque no tengo Maria como elemento en mi array
+```
+
+### find
+
+Va a llamar a una función por cada elemento. Dicha función va a ver si el elemento es igual a la condición que le indique. Y me devuelve el primer valor qeu cumple la condición, si tengo más de un valor que cumple la condición me devuelve solo el primero; encuentra el primero y corta.<br>
+
+En cambio con filter me va a devolver todos los que encentra, si tengo más de uno me muestra todos. <br>
+
+Y si a find le pasamos un elemento que no está, devuelve *undefined*. <br>
+
+```
+const existingElement = nameArray.find( (name) => name === "Alexis");
+
+const existingElement2 = nameArray.find( (name) => name === "Maria");
+
+console.log(existingElement);  //Alexis
+console.log(existingElement2);  //undefined
+```
+
+Es un buen ejemplo para encontrar un nombre en una lista: <br>
+
+```
+const existingElement = nameArray.find( (name) => name.toLowerCase() === "Alexis");
+
+console.log(existingElement);  //Alexis
+
+if (existingElement) {
+  console.log("El nombre está en la lista");
+} else {
+  console.log("El nombre no está en la lista");
+}
+```
+
+Si el nombre no está en la lista, devuelve *undefined* que es un valor *falsy* entonces entra en el else. <br>
+
 ---
 
 # Modulo 5 : Asincronía
