@@ -845,6 +845,67 @@ if (existingElement) {
 
 Si el nombre no está en la lista, devuelve *undefined* que es un valor *falsy* entonces entra en el else. <br>
 
+
+## reduce
+
+
+Sin *reduce*: <br>
+
+```
+const numbers = [10, 20, 30, 40];
+
+let total = 0;
+
+numbers.forEach( (number) => (total+=number));
+```
+
+Con *reduce*, la arow function recibe dos argumentos (el acumulador -el valor que se alamcena en cada una de las iteraciones, es lo que me da el return - y el valor actual -el valor del array en cada iteracion-). <br>
+Y leugo de la arrow function tengo un numero, que es el valor inicial del acumulador. <br>
+```
+const numbers = [10, 20, 30, 40];
+
+const total = numbers.reduce( (acumulador, valorActual) => {
+
+  console.log("Acumulador", acumulador);
+  console.log("Valor actual", valorActual);
+  console.log("Acá termina la iteración");
+
+  return acumulador + valorActual;
+
+}, 0);
+
+console.log(total);
+```
+
+Y voy a ver por consola: <br>
+
+Acumulador 0 <br>
+Valor Actual 10 <br>
+Aca termina la iteracion <br>
+Acumulador 10 <br>
+Valor Actual 20 <br>
+Aca termina la iteracion <br>
+Acumulador 30 <br>
+Valor Actual 30 <br>
+Aca termina la iteracion <br>
+Acumulador 60 <br>
+Valor Actual 40 <br>
+Aca termina la iteracion <br>
+100 <br>
+
+La función siempre *retorna* lo que me indica el **return**, de no tenerlo es *undefined*. <br>
+
+
+otra fomra de hacerlo, más corta <br>
+
+```
+const total = numbers.reduce( (acumulador, valoractual) => acumulador+ valorActual, 
+0
+);
+
+console.log(total);
+```
+
 ---
 
 # Modulo 5 : Asincronía
