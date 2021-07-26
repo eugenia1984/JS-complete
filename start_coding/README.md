@@ -950,6 +950,90 @@ Si la comparación (a,b) retorna un núemro mayor a 0, deja a y b sin cambios. <
 La comparación (a, b) debe devolver siempre el mismo valor para un par específico de elementos a y b, sino es undefined. <br>
 
 
+
+# Objetos
+
+Son una **colección desordenada de valores** , por lo que JavaScript no nos garantiza un orden del objeto (no voy a tener la posición para tener como referencia para ir a buscar un valor). <br>
+En los objetos tenemos: **key** (*clave*) - **value** (*valor*). <br>
+
+## ¿  Cómo se declara un objeto ?
+
+Hay dos opciones <br>
+
+**Literal**: <br>
+
+```
+const literalObject = {firstName: "Maria"};
+```
+
+Si lo veo por consola: <br>
+
+```
+console.log(literalObject );
+```
+
+Voy a ver: <br>
+
+```
+{firstName: "Maria"}
+```
+
+Con su **constructor**: <br>
+
+```
+const constructorObject = new Object();
+```
+
+Si le quiero agregar un par **key - value**: <br>
+
+```
+constructorObject.firstName = "Ana";
+```
+Y si lo mando por consola: <br>
+```
+console.log(constructorObject);
+```
+
+Y veo: <br>
+```
+{firstName: "Ana"}
+```
+
+Tener en cuenta que los Objeos pueden ser guardados en una variable CONSTANTE, qeu es una referencia en memoria que guarda JavaScript para guardar mi objeto, pero en definitiva NO estoy modificando la referencia en memoria (no creo un nuevo objeto), porque es el mismo objeto al cual le estoy MODIFICANDO las propiedades. <br>
+Lo que nunca voy a poder hacer es: **literalObject = constructorObject;**. <br>
+Porque en este caso modificaría la variable y cambiaría el objeto. <br>
+
+Puedo agrgar más de un par: clave - valor: <br>
+
+```
+const literalObject = {firstName: "Maria", lastName: "Costa", favouriteColor: "green};
+```
+
+Y si quiero ver solo un valor, utilizo **dot notation**.<br>
+```
+console.log(literalObject.lastName);
+```
+Y voy a ver Costa. <br>
+
+No se usa el **índice**, sino la **key** del valor que quiero ver. <br>
+
+Otro modo, que se usa menos: <br>
+
+```
+console.log(literalObject["lastName"]);
+```
+
+## ¿ Cómo modifico un value de una key?
+
+Si ahora por ejemplo el favouriteColor es red en vez de green. <br>
+
+```
+literalObject.favouriteColor = "red";
+console.log(literalObject.favouriteColor);    // red
+```
+
+Se puede modificar con dot noation llamando a la key y asignándole el nuevo valor, pero a futuro lo que se va a hacer es una copia del objeto y en esa copia cambiar la propiedad.
+
 ---
 
 # Modulo 5 : Asincronía
