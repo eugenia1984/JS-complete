@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start Coding : modulo 4: estructura de datos</title>
+  <!--Google Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!--favicon-->
+  <link rel="shortcut icon" href="./js.png" type="image/png">
+  <style>
+   *{margin: 0; padding: 0; box-sizing: border-box;}
+   html{font-family: 'Open Sans', sans-serif;}
+   header, footer{background-color: #b0e1e2; padding: 2rem; text-align: center;}
+   main{padding: 2rem;}
+   h1, h2, h3{padding: 1rem; text-align: center;}
+   section{margin-bottom: 1.5rem 0.25rem;}
+   p{font-size: 16px; line-height: 2.0;}
+   ul{ padding: 1.25rem;}
+   ul li , ol li {line-height: 2.5;}
+   code{display: block; line-height: 2.0; font-size: 16px; font-weight: 600;}
+   code.tabulado{margin-left: 2rem;}
+   code.tabulado2{margin-left: 3rem;}
+   code.tabulado3{margin-left: 4rem;}
+   code.tabulado4{margin-left: 5rem;}
+   section{padding: 1rem 0.25rem;}
+   hr{margin: 1rem 0rem;}
+ </style>
+</head>
+<body>
+  <!--Header---->
+  <header>
+    <h1>Start Coding : JavaScript</h1>
+    <h2>Módulo 4: estructura de datos</h2>
+  </header>
+  <!---main---->
+  <main>
+    <section id="arrays">
+      <h2>Arrays</h2>
+    <aside>
+      <h3>Ejercicio :</h3>
+      <p>Dada la siguiente lista de invitador en ese orden:</p>
+      <p>Lucas,</p>
+      <p>Matias,</p>
+      <p>Jose,</p>
+      <p>Pedro,</p>
+      <p>Martina,</p>
+      <p>Marcelo,</p>
+      <p>Esteban,</p>
+      <p>Marcela,</p>
+      <p>Martin</p>
+      <ol>
+        <li>Informar por consola el número de invitados</li>
+        <li>Imprimir por consola el nombre del último invitado</li>
+        <li>A último momento se invitó a Pedro a la fiesta, por lo que hay que agregarlo al final de la lista</li>
+        <li>Media hora antes de empezar Marcela confirmó que no podía asistir. Generar una nueva lista que contenga los invitados que confirmaron su presencia.</li>
+        <li>Por cada invitado, asignarle un número de orden confirme su posición en la lista. Mostrar este número de orden en un nuevo array de la siguiente manera: "Juan. orden: 1". </li>
+        <li>Suponiendo que los invitador consumieron la siguiente cantidad de platos: 
+          <ul>
+            <li>Lucas: 3 platos</li>
+            <li>Esteban: 1 plato</li>
+            <li>Jose: 1 plato</li>
+            <li>Los restantes: 1 plato</li>
+          </ul>
+        Calcular el número total de platos consumidos al final de la fiesta.  
+        </li>
+        <li>Acomodar los invitados por orden alfabético.</li>
+      </ol>
+    </aside>
+    <aside>
+      <h2>¿ Cómo lo resolví ?</h2>
+      <p>Primero: creo mi array de invitados</p>
+      <code>const invitados = [</code>
+      <code>    "Lucas",</code>
+      <code> "Matias",</code>
+      <code> "Jose",</code>
+      <code> "Pedro", </code>
+      <code> "Martina",</code>
+      <code> "Marcelo",</code>
+      <code>"Esteban",</code>
+      <code>  "Marcela",</code>
+      <code>"Martin",</code>
+      <code>];</code>
+      <code></code>
+      <p>Segundo: informo el numero de invitados calculando .length de mi array</p>
+      <code>console.log(`La cantidad de invitados es de: ${invitados.length}`);</code>
+      <hr>
+      <p>Para imprimir el nombre del último invitdo utilizo .length-1 para acceder al último índice del array (que es un número menor al length del array).</p>
+      <code>console.log(`El último invitado es: ${invitados[invitados.length-1]}`);</code>
+      <hr>
+      <p>Para agregar a Pedro al final de la lista, utilizo le método .push()</p>
+      <code>invitados.push("Pedro");</code>
+      <p>Hago un console.log para ver que se agregó pedro la final</p>
+      <code>console.log(invitados);</code>
+      <hr>
+      <p>Marcela no puede asistir, nueva lista que confirma los invitados que existen. Tengo que sacar a marcela, utilizo un filter</p>
+      <code>const invitadosConfirmados = invitados.filter( (name) => name !== "Marcela");</code>
+      <p>Lo imprimo por consola: </p>
+      <code>console.log(invitadosConfirmados);</code>
+      <p>Por cada invitado debo generar un número de orden, utilizo el método .map()</p>
+      <code>const invitadosConNumero = invitadosConfirmados.map( (firstName, index) => ` ${firstName}. Orden: ${index+1}`);</code>
+      <p>Lo muestro con console.log()</p>
+      <code>console.log(invitadosConNumero);</code>
+      <hr>
+      <p>Para calcular el total de platos, tengo que ir sumando la cantidad que comió cada uno, usando un reduce.</p>
+      <code>const totalPlatos = invitadosConfirmados.reduce( (acumulador, valorActual) => {</code>
+      <code class="tabulado">if( valorActual === "Lucas" ) {</code>
+      <code class="tabulado2">return acumulador + 3;</code>
+      <code class="tabulado">} else if( valorActual === "Esteban" || valorActual === "Jose" ) {</code>
+      <code class="tabulado2">return acumulador +1;</code>
+      <code class="tabulado">} else { </code>
+      <code class="tabulado2">return acumulador + 4;</code>
+      <code class="tabulado">}</code>
+      <code>}, 0);</code>
+      <p>Mando por console.log el total de los platos</p>
+      <code>console.log(`El total de los platos es de : ${totalPlatos}`);</code>
+      <hr>
+      <p>Para acomodar a los invitados por orden alfabético utilizo el método .sort()</p>
+      <code>const listaOrdenada = invitadosConfirmados.sort();</code>
+      <p>muestro la lista con console.log</p>
+      <code>console.log(listaOrdenada);</code>
+      <hr>
+    </aside>
+
+    </section>
+  </main>
+  <!----Footer---->
+  <footer>
+    <h3>Práctica de <a href="http://www.linkedin.com/in/maríaeugeniacosta" target="_blank" rel="noopener noreferrer"> María Eugenia Costa </a> </h3>
+  </footer>
+<script src="./script.js"></script>
+</body>
+</html>
