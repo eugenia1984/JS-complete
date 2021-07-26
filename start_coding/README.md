@@ -906,6 +906,50 @@ const total = numbers.reduce( (acumulador, valoractual) => acumulador+ valorActu
 console.log(total);
 ```
 
+
+## sort
+
+Para ordenar un array alfabéticamente (de la a la z). <br>
+Si lo quiero ordenar de la z a la a utilizo el método **reverse()**. <br>
+También sirve para rodenar números. <br>
+
+```
+const miArray = [
+   "Alexis", 
+   "Juan", 
+   "Pedro", 
+   "Marcela", 
+   "Ana",
+];
+
+const orderedArray = miArray.sort();
+
+console.log(orderedArray);  // ["Alexis", "Ana", "Juan", "Marcela", "Pedro"]
+
+console.log(orderedArray.reverse());  // ["Pedro", "Marcela", "Juan", "Ana", "Alexis"]
+
+const numbers = [10, 20, 30, 40];
+
+console.log(orderedArray2);  //[10, 20, 30, 40]
+
+console.log(orderedArra2.reverse());  //[40, 30, 20, 10]
+```
+
+*sort* puede recibir como *argumento* una función con dos elemento, y tienen una función para compararlos y ordenarlos.  <br>
+
+Por ejemplo: <br>
+
+```
+const ordererArray3 = numbers.sort( (a,b) => );
+```
+
+Si la comparación (a,b) retorna un numero menor a 0, a viene primero. <br>
+Si la comparación (a,b) retorna 0, deja a y b igual, pero los ordena con respecto a otros elementos. <br>
+Si la comparación (a,b) retorna un núemro mayor a 0, deja a y b sin cambios. <br>
+
+La comparación (a, b) debe devolver siempre el mismo valor para un par específico de elementos a y b, sino es undefined. <br>
+
+
 ---
 
 # Modulo 5 : Asincronía
