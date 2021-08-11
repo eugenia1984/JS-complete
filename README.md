@@ -7,7 +7,7 @@ ENGLISH
 
 It's the theory with the **Jon Mircha** JavaScript course exercises. <br>
 
-In the **teoria** file you can see part of the theory is explained, and then in the files are the exercises. <br>
+In the [**teoria**](https://github.com/eugenia1984/JS-complete/tree/main/teoria) file you can see part of the theory is explained, and then in the files are the exercises. <br>
 
 Topics:
 
@@ -40,8 +40,10 @@ Topics:
 
 ## Extra
 
-In the **start Coding** folder you will find JavaScript theory and exercises from the Start Coding Ai course from which I received a schoolarship for the JavaScript and Node module.
+In the [**start Coding**](https://github.com/eugenia1984/JS-complete/tree/main/start_coding) folder you will find JavaScript theory and exercises from the Start Coding Ai course from which I received a schoolarship for the JavaScript and Node module.
+
 Watched topics:
+
    * Module 1: Values
    * Module 2: Flow control
    * Module 3: Functions
@@ -71,7 +73,7 @@ Watched topics:
 
 ## Notes
 
-I appreciate your interest in this repository ⌨️ with ❤️ by [María Eugenia Costa] (https://github.com/eugenia1984) 😊 and follow me on [LinkedIn](http://www.linkedin.com/in/maríaeugeniacosta)
+I appreciate your interest in this repository ⌨️ with ❤️ by [María Eugenia Costa](https://github.com/eugenia1984) 😊 and follow me on [LinkedIn](http://www.linkedin.com/in/maríaeugeniacosta)
 
 
 
@@ -87,7 +89,7 @@ ESPAÑOL
 
 Es la teoría con los ejercicios del curso de **Jon Mircha** de JavaScript. <br>
 
-En la carpeta **teoria** está explicada parte de la teoría, y luego en los archivos están los ejercicios. <br>
+En la carpeta [**teoria**](https://github.com/eugenia1984/JS-complete/tree/main/teoria) está explicada parte de la teoría, y luego en los archivos están los ejercicios. <br>
 
 Temas vistos:
 
@@ -122,8 +124,10 @@ Temas vistos:
 
 ## Extra
 
-En la carpeta **start Coding** van a encontrar teoría y ejercicios de JavaScript del curso de Start Coding Ai del cual obtuve beca para los módulo de JavaScript y Node<br>
+En la carpeta [**start Coding**[(https://github.com/eugenia1984/JS-complete/tree/main/start_coding) van a encontrar teoría y ejercicios de JavaScript del curso de Start Coding Ai del cual obtuve beca para los módulo de JavaScript y Node
+
 Temas vistos:
+
    * Modulo 1: Valores
    * Modulo 2 : Control de flujos
    * Modulo 3 : Funciones
