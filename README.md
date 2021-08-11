@@ -124,7 +124,7 @@ Temas vistos:
 
 ## Extra
 
-En la carpeta [**start Coding**[(https://github.com/eugenia1984/JS-complete/tree/main/start_coding) van a encontrar teoría y ejercicios de JavaScript del curso de Start Coding Ai del cual obtuve beca para los módulo de JavaScript y Node
+En la carpeta [**start Coding**](https://github.com/eugenia1984/JS-complete/tree/main/start_coding) van a encontrar teoría y ejercicios de JavaScript del curso de Start Coding Ai del cual obtuve beca para los módulo de JavaScript y Node
 
 Temas vistos:
 
