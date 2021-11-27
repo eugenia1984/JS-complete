@@ -64,7 +64,6 @@ Watched topics:
 
 ## Please: 🎁
 
-* If you liked this content, don't forget to click on: ⭐
 * I shared this content with others 📢
 * Invite a beer 🍺 or a coffee ☕ to someone from the team
 * Thank you very much 🤓.
@@ -149,7 +148,6 @@ Temas vistos:
 
 ## Por favor: 🎁
 
-* Si te gusto este contenido no te olvides de darle click a la:  ⭐
 * Compartí este contenido con otros 📢
 * Invita una cerveza 🍺 o un café ☕ a alguien del equipo 
 * Muchas gracias 🤓.
