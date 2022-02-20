@@ -5,13 +5,12 @@ ENGLISH
 
 ## Content 📖
 
-It's the theory with the **Jon Mircha** JavaScript course exercises. <br>
+[All the theory with the **Jon Mircha** JavaScript course exercises you can see here - it´s in another repository](https://github.com/eugenia1984/learn-JS-with-JonMircha-videos)
 
-In the [**teoria**](https://github.com/eugenia1984/JS-complete/tree/main/teoria) file you can see part of the theory is explained, and then in the files are the exercises. <br>
+In the [**teoria**](https://github.com/eugenia1984/JS-complete/tree/main/teoria) theres information about PWA 
 
-PWA (more information in tha folder teoría)
 
-:computer: [You can take a looj here of some logic exercises](https://eugenia1984.github.io/JS-complete/)
+:computer: [You can take a look here of some logic exercises](https://eugenia1984.github.io/JS-complete/)
 
 ---
 
@@ -63,15 +62,11 @@ ESPAÑOL
 
 ## Contenido 📖
 
-Es la teoría con los ejercicios del curso de **Jon Mircha** de JavaScript. <br>
+[Toda la teoría del curso de Jon Mircha de JavaScript la podés ver acá - está en otro repositorio](https://github.com/eugenia1984/learn-JS-with-JonMircha-videos)
 
-En la carpeta [**teoria**](https://github.com/eugenia1984/JS-complete/tree/main/teoria) está explicada parte de la teoría, y luego en los archivos están los ejercicios. <br>
+En [**teoria**](https://github.com/eugenia1984/JS-complete/tree/main/teoria) hay información de PWA 
 
-
-
-:computer:  implementé PWA (más información en la carpeta de teoría)
-
-:computer: Podes verla acá [algunos ejercicios de lógica d eprogramación](https://eugenia1984.github.io/JS-complete/)
+:computer: [Acá podés ver alguno ejercicios de lógica](https://eugenia1984.github.io/JS-complete/)
 
 
 ## Ejercicios :computer:
