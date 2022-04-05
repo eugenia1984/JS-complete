@@ -29,6 +29,7 @@ Watched topics:
    * Module 7: DOM
    * Module 8: Extras
    
+In the [**buenas practicas**](https://github.com/eugenia1984/JS-complete/tree/main/buenas_practicas) folder you will see the LinkedIn Learning course *Good practise* of JavaScript.
 
 ---
 
@@ -92,10 +93,12 @@ Temas vistos:
    * Modulo 8 : Extras
 
 
+In the [**buenas practicas**](https://github.com/eugenia1984/JS-complete/tree/main/buenas_practicas) folder you will see the LinkedIn Learning course *Good practise* of JavaScript de *Natalia Corea*, donde da consejos y trucos prácticos que amplificarán la productividad de los desarrollos. Brinda herramientas útiles para la depuración y la ejecución de pruebas unitarias, buenas prácticas en temas de seguridad, generación de documentación y estilizado de código, entre otros conceptos clave.
+
 ---
 
 
-## Stack teconológico  🛠️
+## Stack tecnológico  🛠️
 
 **HTML5** , **CSS3** , **JAVASCRIPT**
 
