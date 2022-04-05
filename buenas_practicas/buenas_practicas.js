@@ -195,14 +195,14 @@ if(navigator && navigator.geolocation) {  // valido que existe y que esta implem
 } else {
     // hacer alguna otra cosa si no lo soporta
 }
-// hay que tener en cuenta las versiones de los navegadores para lalmar a las APIS
+// hay que tener en cuenta las versiones de los navegadores para llamar a las APIS
 navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozgetUserMedia || navigator.msGetUserMEdia;
 window.URL = window.URL || window.webkitURL || window.mozURL || window.msURL;
 if(navigator.getUserMedia) {
     // solicitar la camara
 }
 /*
-Agregando funcionalidad no soportada a travez de polyfills:
+Agregando funcionalidad no soportada a traves de polyfills:
 - implementaciones que reemplazan funcionalidades que no están disponibles en el navegador.
 - debe estar identico al que soporta el navegador
 - puede ser complicado implementar un polyfill, por eso ver este enlace
@@ -252,7 +252,7 @@ if(typeof window.localStorage == 'undefined' || typeof window.sessionStorage ==
     if(typeof window.sessionStorage == 'undefined') window.sessionStorage = new Storage ('session');
 })
 /*
-Conociendo la librerñia de utilidades LodashJS:
+Conociendo la librería de utilidades LodashJS:
 - en lodash.com se descarga por CDN, el archivo zipeado o por npm
 - para llamar a los elementos: _.
 */
