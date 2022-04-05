@@ -1,7 +1,7 @@
 /* * Curso de LinkedIn Learning : JavaScript trucos * */ 
 /************ Buenas prácticas *************/
 // 1 - Utilizar nombre significativos, usa formato camelCase
-let esAtcivo = true; //si, porque es booleano
+let esActivo = true; //si, porque es booleano
 // 2 - Evitar variables globales, siempre mejor utilizar let y const, o trabajar con objetos y modulos
 /*
 No hacer:
