@@ -160,7 +160,7 @@ function generalValorRandom() {
     }
 
     let keys = Object.keys(obj);
-    let aleatorio = Math.random(Math.random()+4);
+    let aleatorio = Math.round(Math.random()+4);
     return obj[keys[aleatorio]];
 }
 // cuando en base a una condicion esperamos cierto parametro y olvidamos definir un parametro por default
@@ -204,8 +204,12 @@ if(navigator.getUserMedia) {
 /*
 Agregando funcionalidad no soportada a travez de polyfills:
 - implementaciones que reemplazan funcionalidades que no están disponibles en el navegador.
+- debe estar identico al que soporta el navegador
+- puede ser complicado implementar un polyfill, por eso ver este enlace
+http://github.com/Modernizr/wiki/HTML5-Cross-browser-Polyfills donde hay una lista de Pilyfills ya desarrollados y testeados
 */
-if(typeof window.localStorage == 'undefined' || typeof window.sessionStorage == 'undefined') ( function () {
+// ejemplo que simula el localStorage para los navegadores que no lo soportan
+if(typeof window.localStorage == 'undefined' || typeof window.sessionStorage == 'undefined') ( function () { // valida si el localStorage esta en el window
     // define el tipo de storage (local o session)
     var Storage = function (type) {
 
@@ -215,7 +219,7 @@ if(typeof window.localStorage == 'undefined' || typeof window.sessionStorage ==
         function clearData() {
             // limpia la informacion en el storage
         }
-        return {
+        return {  // si no esta el localStorage lo crea
             length: 0,
             clear: function () {
                 clearData();
@@ -248,34 +252,379 @@ if(typeof window.localStorage == 'undefined' || typeof window.sessionStorage ==
     if(typeof window.sessionStorage == 'undefined') window.sessionStorage = new Storage ('session');
 })
 /*
-Conociendo la librerñia de utilidades LodashJS
+Conociendo la librerñia de utilidades LodashJS:
+- en lodash.com se descarga por CDN, el archivo zipeado o por npm
+- para llamar a los elementos: _.
 */
+// ejemplo para utilizar lodash
+let arr1 = [1, 2, 3, 4, 5, 5];
+let arr2 = [1, 1, 2, 3, 4, 4, 5, 5, 6];
+
+console.log(_.interaction(arr1, arr2));
+
+function aleatorio() {
+    return Math.round(Math.random() *100);
+}
+
+console.log(_.time(5, aleatorio));  // va a ejecutar la funcion aleatorio 5 veces
+
+console.log(_.sortedUniq(arr2));  // elimina los duplicados
+
+const obj1 = { nombre: 'Naty', edad: 35};
+
+const obj2 = {
+    nombre: 'Naty',
+    edad: 35
+};
+
+obj1 == obj2;
+
+console.log(_.isEqual(obj1, obj2));  // compara dos objetos, una propiedad por otra
+
+console.log(_.isEmpty({}));  // para ver si esta vacio el Object
+
+let clon = _.clonDeep(obj1);   // toma un objeto y lo clona, sirve para hacer copias
+
+console.log("original:", obj1);
+
+console.log("clon:", obj2);
 /*
-Manipulando datos utilizando LodashJS
+Manipulando datos utilizando LodashJS:
+- es muy util para trabajar con Arrays
 */
+let data = [{
+    "id": 1,
+    "nombre": "Janette",
+    "apellido": "Prendes",
+    "correo_electronico": "jprendes@census.com",
+    "genero": "Femenino",
+    "ip_address": "26.58.193.2",
+    "ciudad": "Zoetermeer",
+    "edad": 28
+},{
+    "id": 2,
+    "nombre": "Giovanni",
+    "apellido": "Frediani",
+    "correo_electronico": "gfrediani@senate.gov",
+    "genero": "Masculino",
+    "ip_address": "229.179.4.212",
+    "ciudad": "Zoetermeer",
+    "edad": 35
+}, {
+    "id": 3,
+    "nombre": "Noel",
+    "apellido": "Bea",
+    "correo_electronico": "nbea2@imageshack.com",
+    "genero": "Femenino",
+    "ip_address": "180.60.162.255",
+    "ciudad": "Madrid",
+    "edad": 21
+}, {
+    "id": 4,
+    "nombre": "William",
+    "apellido": "Prendes",
+    "correo_electronico": "jprendes@census.com",
+    "genero": "Femenino",
+    "ip_address": "26.58.193.2",
+    "ciudad": "Zoetermeer",
+    "edad": 32
+}];
+
+console.log(_.groupBy(data, 'genero'));  // para agruparlos por le genero
+
+console.log(_.filter(data,
+    { 'genero': "Femenino", 'ciudad': "Zoetermeer" }));
+
+let resultado = _.reduce(data, function (res, usuario) {
+    if(usuario.edad >= 25 && usuario.edad <= 35) {
+        (res[usuario.edad] || res[usuario.edad] == []).push({nombre: usuario.nombre, apellido: usuario.apellido});
+    }
+    return res;
+}, {});
+
+console.log(resultado);
+
+console.log(_.orderBy(data, 'edad'));  // ordeno la informacion por edad
+
+let keyData = _.keyBy(data, "id");  // defino un key en la estructura de datos que utilizo para acceder a la informacion, en vez de usar el index
+
+console.log(keyData[3]);
 /************ Documentando tu código utilizando JSDoc *************/
 /*
 Introducción a JSDoc:
+- documentar el codigo es esencial, maás en un grupo grande de desarrolladores
+- JSDoc es un markup languaje con etiquetas, tiene un compilador para generar un archivo en base a tus etiquetas documentadas
+- web: jsdoc.com
 */
+/*Etiquetas comunes de JSDoc*/
+
+// ejemplo de comentario con la descripcion de un modulo
+/**
+ * la descripcion del modulo
+ * @module Constantes
+ * @author Maria Eugenia Constantes
+ * @copyright Creative Commons
+ * @version 1.0.0
+ */
+ 
+//ejemplo de variable
+/**
+ * la descripcion de la variable
+ * @type {number}
+ */
+
+//ejemplo de constante
+/**
+ * @const {number} - el numero de pasos del proceso
+*/
+const numeroPasos = 5;
+
+// ejemplo de objeto
+/**
+ * Caracteristicas de un objeto 3D
+ * @typeof {Object} Propiedades
+ * @property {boolean} largo - el largo del objeto
+ * @property {boolean} ancho - el ancho del objeto
+ * @property {boolean} profundidad - la profundidad del objeto
+ * @property {string} color - el color del objeto
+ */
+const Prpopiedades = {
+    largo: 5,
+    ancho: 4,
+    profunidad: 3,
+    color: "rojo"
+}
+ 
+// un listener a un evento
+/**
+ * @typeof {object} MouseEvent
+ * @typeof {object} HTMLElement
+ */
+
+/**
+ * Reporte el click a un boton
+ * @param {MouseEvent} e - el evento click del boton
+ * @listens MouseEvent
+ */
+function clickHandler(e) {
+    //
+}
+document.getElementById.addEventListener("click", clickHandler);
+
+module.exports = {};
+
+/*Documentando funciones en JavaSCript con JSDoc*/
+// funcion
+/**
+ * descripcion
+ * @param {number} num 
+ * @returns {void}
+ */
+function prueba2(num) {
+    return num = 2;
+}
+
+/**
+ * Genera un número aleatorio entre 0 y el numero pasado como parametro
+ * @param {number} max - el numero maximo que debe calcularse como aleatorio
+ * @returns {number}
+ */
+function randomNum(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+}
+
+/** 
+ * Genera un div donde aplica una clase 'ball' con colores aleatorios
+ * @returns {HTMLDivElement}
+*/
+function generarCirculo() {
+    let ball = document.createElement("div");
+    ball.className = "ball";
+    ball.style.backgroundColor = "rgb("+ randomNum(255) + "," + randomNum(255) + "," + randomNum(255) + "]";
+    ball.style.top = randomNum(350)+"px";
+    ball.style.left = randomNum(1550)+ "px";
+    ball.addEventListener("animationed", function (event) {
+        document.body.removeChild(event.target);
+    });
+    document.body.appendChild(ball);
+    return ball;
+}
+
+/**
+ * Retorna la suma de A y B
+ * @param {number} a
+ * @param {number} b
+ * @return {Promise} El objeto promesa que representa la suma de a y b
+ */ 
+function suma(a,b) {
+    return new Promise( (resolve, reject) => {
+        resolve(a+b);
+    });
+}
+
+/* Documentando clases con JSDoc*/
+// documentar una clase
+/**
+ * @class Figura1
+ * Crea una nueva figura
+ * @param {string} tipo - el tipo de figura
+ * @param {number} color - el color de la figura
+ */
+const Figura1 = function (tipo, color) {
+    this.tipo = tipo;
+    this.color = color;
+}
+
+// la descripcion de la clase
+class Persona {
+    // el constructor de la clase
+    /**
+     * descripcion del constructor
+     * @param {string} _nombre [descripcion] 
+     * @param {string} _apellido [descripcion] 
+     */
+    constructor (nombre, apellido) {
+        //miembros de la clase que son privados
+        /** @private */
+        this._nombre = nombre;
+        /** @private */
+        this._apellido = apellido;
+    }
+
+    /**
+     * Dice el nombre de la persona
+     */
+    static decirNombre() {
+        console.log(`Mi nombre es ${this.nombre} ${this.apellido}`);
+    }
+
+    // @readonly indica que es solo para LEER datos
+    /**
+     * Devuelve el nombre de la persona
+     * @readonly
+     */
+    get nombre() {
+        return this.nombre;
+    }
+
+    /**
+     * Indica la direccion de Persona
+     * @param {string} dir - la direccion en forma de string 
+     */
+    static indicarDireccion(dir) {
+        this.direcicon = dir;
+    }
+}
+
 /*
-Etiquetas comunes de JSDoc
+¿Cómo exportar documentación con JSDoc?
+- tener instalado npm
+- inicializar npm: 
+>npm init
+- ya hay un archivo package.json
+- instalar JSDoc:
+> npm install -D jsdoc
+- crear un archivo de configuracion, llamado jsdoc.json y agregar los parametros:
+{
+    "source": {
+        "include": ["src"],
+        "includePattern": ".js$",
+        "excludePattern": "[node_modules/|docs]"
+    },
+    "opts": {
+        "recursive": true,
+        "destination": "./docs/"
+    }
+}
+- en el package.json cambiar:
+"scripts": {
+    "doc": "json -c jsdoc.json"
+}
+- ahora lo ejecuto en terminal
+> npm run doc
 */
-/*
-Documentando funciones en JavaSCript con JSDoc
-*/
-/*
-Cómo exportar documentación con JSDoc
-*/
+
 /************ Trabajando valores de tiempo con MomentJS *************/
 /*
-Creando objetos fecha con MomentJS
+Creando objetos fecha con MomentJS:
+- momentjs.com
+- ayuda a trabajar con valores de tiempo y fecha
 */
+// creando objetos con fecha con MomentJS
+// dondole formato con .format()
+let fechaActual = moment(); // sin parametros toma la fecha actual
+console.log(fechaActual.format("DD-MM-YY HH:mm"));
+
+let fechaDesdeString = moment("2020-02-20 19:30:30", "YYYY-MM-DD HH:mm:ss");
+console.log(fechaActual.format("MMMM Do"));
+console.log(fechaDesdeString.fromNow());
+
+let fechaDesdeDate = moment(new Date());  // con un objeto fecha
+console.log(fechaDesdeDate.format('[El dia de la semana es] dddd y el mes es ]Do'));
+
+let fechaDesdeOtroMoment = moment(fechaActual);  // clonarlo
+console.log(fechaDesdeOtroMoment.format('[El dia de la semana es] dddd y el mes es ]Do'));
+
+let fechaDesdeObjeto = moment({year :2010, month :3, day :5, hour : 10, minute : 20, second: 30});    // crear a partir de un objeto
+console.log(fechaDesdeObjeto.format("YYYY-MM-DD HH:mm:ss"));
+
+let fechaDesdeArreglo = moment([2020, 6, 10]);
+console.log(fechaDesdeArreglo.format("DD-MM-YYYY HH:mm:ss"));
+
+/***** Realizando cálculos de tiempo con MomentJS *****/
+// .isBefore -> para saber si una fecha es mayor a otra
+console.log(`Es ${fechaDesdeObjeto.format("YYYY")} antes que ${fechaActual.format("YYYY")} ? ${fechaDesdeObjeto.isBefore(fechaActual)}`);
+
+console.log(`Es ${fechaDesdeObjeto.format("YYYY")} después que ${fechaActual.format("YYYY")} ? ${fechaDesdeObjeto.isAfter(fechaActual)}`);
+
+// .isBetween() -> veo si una fecha se encuentra entre dos fechas, los parametros son: fecha inicial, fecha final,la unidad en la que quiero comparar (opcional) , la manera en que quiero que se compare(opcional)
+console.log(moment('2020-02-10')
+.isBetween('2020-02-10', fechaDesdeArreglo, 'day', '[]'));
+
+// .subtract() -> remueve/elimina tiempo de un objeto moment, se pasa como parametros: el numero de unidades y el tipo
+console.log(fechaDesdeObjeto
+    .subtract(3, 'hours').format("HH:mm:ss"));
+
+// .add() -> agrega tiempo, se pasa como parametros: el numero de unidades y el tipo 
+console.log(fechaDesdeObjeto.add(3, "days").format("DD-MM-YYYY"));
+
+// .day() -> para saber el dia de la semana
+console.log(moment().day());
+
+
+// .diff() -> devuelve la diferencia entre dos objetos moment
+console.log(moment().add(3, "days").diff(moment(), "hours"));
+
+/**** Convirtiendo fechas entre zonas horarias con MomentJS ******/
+// momentjs.com/timezone
+// usa UTC por defecto
+
+let fechaHora1 = moment.tz("May 12th 2020 8PM", "MMM Do YYYY hA", "America/CostaRica");
+let fechaHora2 = moment.tz("May 12th 2020 8PM", "MMM Do YYYY hA", "America/LosAngeles");
+
+// transformar un moment de una zona a otra
+var a = moment().tz("Asia/Taipei");
+var b = moment("2020-06-27 11:55").tz("America/Toronto");
+
+console.log(a.format("DD-MM-YY HH:mm:ss"));
+console.log(b.format("DD-MM-YY HH:mm:ss"));
+
+console.log(a.utc().format("DD-MM-YY HH:mm:ss"));
+console.log(b.utc().format("DD-MM-YY HH:mm:ss"));
+
+/*** Trabajando con valores locales utilizando MomentJS Local ***/
+// moment-with-locales.js
+
 /*
-Realizando cálculos de tiempo con MomentJS
+Para cambiar el lenguaje:
+moment.locale('es')
+
 */
-/*
-convirtiendo fechas entre zonas horarias con MomentJS
-*/
-/*
-Trabajando con valores locales utilizando MomentJS Local
-*/
+console.log(fechaActual.format("DD-MM-YY HH:mm"));
+console.log(fechaDesdeString.fromNow());
+
+console.log(fechaDesdeObjeto.format("dddd"));
+console.log(fechaDesdeObjeto.format("L"));
+console.log(fechaDesdeObjeto.format("LLLL"));
+
+
