@@ -1,4 +1,4 @@
-# :stat: Curso de LinkedIn Learning : JavaScript trucos
+# :star: Curso de LinkedIn Learning : JavaScript trucos
 
 ---
 
