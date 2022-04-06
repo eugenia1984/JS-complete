@@ -33,7 +33,10 @@ In the [**buenas practicas**](https://github.com/eugenia1984/JS-complete/tree/ma
 
 
 
-In the[Curso JS TDD](https://github.com/eugenia1984/JS-complete/tree/main/curso_js_tdd) folder you will see the LinkedIn Learning course  : *JavaScript: TDD y pruebas unitarias esenciales* of *Jorge Gonzalez Villanueva*.
+In the[**Curso JS TDD**](https://github.com/eugenia1984/JS-complete/tree/main/curso_js_tdd) folder you will see the LinkedIn Learning course  : *JavaScript: TDD y pruebas unitarias esenciales* of *Jorge Gonzalez Villanueva*.
+
+
+In the [**JS avanzado**](https://github.com/eugenia1984/JS-complete/tree/main/js_avanzado) folder you will see the LinkedIn Learning course: *Advance JavaScript 1*  of *Natalia Corea*
 
 ---
 
@@ -100,7 +103,9 @@ Temas vistos:
 En la carpeta [**buenas practicas**](https://github.com/eugenia1984/JS-complete/tree/main/buenas_practicas) van a encontrar el curso de LinkedIn Learning  *JavaScript : Trucos* de *Natalia Corea*, donde da consejos y trucos prácticos que amplificarán la productividad de los desarrollos. Brinda herramientas útiles para la depuración y la ejecución de pruebas unitarias, buenas prácticas en temas de seguridad, generación de documentación y estilizado de código, entre otros conceptos clave.
 
 
-En la carpeta [Curso JS TDD](https://github.com/eugenia1984/JS-complete/tree/main/curso_js_tdd) van a econtrar el curso de LinkedIn Learning de *Jorge Gonzalez Villanueva* : *JavaScript: TDD y pruebas unitarias esenciales*
+En la carpeta [**Curso JS TDD**](https://github.com/eugenia1984/JS-complete/tree/main/curso_js_tdd) van a econtrar el curso de LinkedIn Learning de *Jorge Gonzalez Villanueva* : *JavaScript: TDD y pruebas unitarias esenciales*
+
+En la carpeta [**JS avanzado**](https://github.com/eugenia1984/JS-complete/tree/main/js_avanzado) van a econtrar el curso de LinkedIn Learning de *Natalia Corea* : *JavaScript Avanzado 1*
 
 ---
 
