@@ -1,0 +1,29 @@
+const Persona = function(nombre){
+    this.nombre = nombre;
+}
+
+//__proto__
+Persona.prototype.decirNombre = function(){
+    console.log('Mi nombre es: ', this.nombre);
+}
+
+const persona1 = new Persona('Lincy');
+persona1.decirNombre();
+
+const persona2 = new Persona('Lucía');
+persona2.decirNombre();
+
+class Persona {
+    constructor(nombre) {
+        this.nombre = nombre;
+    }
+    decirNombre(){
+        console.log('Mi nombre es: ', this.nombre);
+    }
+}
+
+const persona1 = new Persona('Lincy');
+persona1.decirNombre();
+
+const persona2 = new Persona('Lucía');
+persona2.decirNombre();

@@ -1,0 +1,24 @@
+const objetoSet = new Set([1, 'string', {}, {nombre: 'Natalia'}]);
+
+		objetoSet.add(12);
+		objetoSet.add(12);
+		
+		console.log(objetoSet.has(12));
+		console.log(objetoSet.size);
+
+		objetoSet.forEach(value=>{
+			console.log(value);
+		})
+
+		for(value of objetoSet){
+			console.log(value);
+		}
+		
+
+		const objetoWeakSet = new WeakSet([{}, {nombre: 'Natalia'}]);
+		
+		objetoWeakSet.add(12);
+
+		for(value of objetoWeakSet){
+			console.log(value);
+		}
