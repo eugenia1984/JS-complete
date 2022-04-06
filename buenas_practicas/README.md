@@ -72,7 +72,7 @@ Temas vistos:
 
 - etiquetas comunes de JSDoc
 
-- documentando funciones en JavaSCript con JSDoc
+- documentando funciones en JavaScript con JSDoc
 
 - documentando clases con JSDoc
 
