@@ -38,7 +38,7 @@ In the[**Curso JS TDD**](https://github.com/eugenia1984/JS-complete/tree/main/cu
 
 In the [**JS avanzado**](https://github.com/eugenia1984/JS-complete/tree/main/js_avanzado) folder you will see the LinkedIn Learning course: *Advance JavaScript 1*  of *Natalia Corea*
 
-In the [**numen_js_praccticas**](https://github.com/eugenia1984/JS-complete/tree/main/numen_js_practicas) folder you will see some JavaScript practices in the Full Stack course of Numen Academy
+In the [**numen_js_practicas**](https://github.com/eugenia1984/JS-complete/tree/main/numen_js_practicas) folder you will see some JavaScript practices in the Full Stack course of Numen Academy
 
 ---
 
@@ -110,7 +110,7 @@ En la carpeta [**Curso JS TDD**](https://github.com/eugenia1984/JS-complete/tree
 En la carpeta [**JS avanzado**](https://github.com/eugenia1984/JS-complete/tree/main/js_avanzado) van a econtrar el curso de LinkedIn Learning de *Natalia Corea* : *JavaScript Avanzado 1*
 
 
-En la carpeta [**numen_js_praccticas**](https://github.com/eugenia1984/JS-complete/tree/main/numen_js_practicas) veran los ejercicios de practica de JavaScript que realice en el curso de Academia Numen Full Stack (React y Node)
+En la carpeta [**numen_js_practicas**](https://github.com/eugenia1984/JS-complete/tree/main/numen_js_practicas) veran los ejercicios de practica de JavaScript que realice en el curso de Academia Numen Full Stack (React y Node)
 
 ---
 
