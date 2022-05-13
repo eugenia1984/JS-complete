@@ -6,7 +6,7 @@ Curso de **LinkedIn Learning** de **Marten Rand-Hendrisken**.
 
 ## Ejercicios de practica
 
-[Aca esta el repositorio de GitHUB para ver como guia(https://github.com/LinkedInLearning/javascript-essential-training-2832077)
+[Aca esta el repositorio de GitHUB para ver como guia](https://github.com/LinkedInLearning/javascript-essential-training-2832077)
 
 ---
 
