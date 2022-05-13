@@ -95,6 +95,8 @@ En la carpeta **01_01** hay un componente *Photo* en react, en las demás carpet
  export default Photo;
  ```
  
+- **01_02_object** se crea el objeto *backpack* y con la funcion *updateBackpack()* se renderizan las propiedades del objeto en el DOM del HTML dentro de una etiqueta *main* creada dinamicamente.
+
 ---
 
 ## Links from JavaScript Essential Training
