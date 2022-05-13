@@ -1,4 +1,4 @@
-# :book: JavaScript Essential Trining (LinkedIn Learning)
+# :book: JavaScript Essential Training (LinkedIn Learning)
 
 Curso de **LinkedIn Learning** de **Marten Rand-Hendrisken**.
 
@@ -97,6 +97,9 @@ En la carpeta **01_01** hay un componente *Photo* en react, en las demás carpet
  
 - **01_02_object** se crea el objeto *backpack* y con la funcion *updateBackpack()* se renderizan las propiedades del objeto en el DOM del HTML dentro de una etiqueta *main* creada dinamicamente.
 
+- **02_01** es un ejemplo de tener el JavaScript dentro del HTML. Es un antipatrón de diseño, ya no se recomienda. En los ejercicios anteriores ya tenemos ejemplos de JavaScript en un archivo **.js** que se llama en el HTML mediante la etiqueta ```<script>```
+
+Dentro de **script** podemos agregar el pametro **defered**
 ---
 
 ## Links from JavaScript Essential Training
