@@ -60,7 +60,7 @@ In the [**4_ejercicios_entrevista_tecnica**](https://github.com/eugenia1984/JS-c
 
 ## Notes
 
-I appreciate your interest in this repository ⌨️ with ❤️ by [María Eugenia Costa](https://github.com/eugenia1984) 😊 and follow me on [LinkedIn](http://www.linkedin.com/in/maríaeugeniacosta)
+I appreciate your interest in this repository ⌨️ with ❤️ by [María Eugenia Costa](https://github.com/eugenia1984) 😊 and follow me on [LinkedIn - maria-eugenia-costa](https://www.linkedin.com/in/maria-eugenia-costa/)
 
 
 
@@ -135,7 +135,7 @@ En la carpeta [**4_ejercicios_entrevista_tecnica**](https://github.com/eugenia19
 
 ## Notas
 
-Aprecio tu interés por este repositorio ⌨️  con ❤️ de [María Eugenia Costa](https://github.com/eugenia1984) 😊 y seguime en  [LinkedIn](http://www.linkedin.com/in/maríaeugeniacosta) 
+Aprecio tu interés por este repositorio ⌨️  con ❤️ de [María Eugenia Costa](https://github.com/eugenia1984) 😊 y seguime en  [LinkedIn - maria-eugenia-costa](https://www.linkedin.com/in/maria-eugenia-costa/)
 
 
 ---
