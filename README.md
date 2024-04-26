@@ -42,6 +42,8 @@ In the [**numen_js_practicas**](https://github.com/eugenia1984/JS-complete/tree/
 
 In the [**4_ejercicios_entrevista_tecnica**](https://github.com/eugenia1984/JS-complete/tree/main/4_ejercicios_entrevista_tecnica) you will find 3 logic exercises.
 
+In the [**Eloquent JavaSCript**](https://github.com/eugenia1984/JS-complete/tree/main/eloquent_javascript) you will find some exercises of JavaScript and examples
+
 ---
 
 ## Tech Stack 🛠️
@@ -115,6 +117,8 @@ En la carpeta [**JS avanzado**](https://github.com/eugenia1984/JS-complete/tree/
 En la carpeta [**numen_js_practicas**](https://github.com/eugenia1984/JS-complete/tree/main/numen_js_practicas) veran los ejercicios de practica de JavaScript que realice en el curso de Academia Numen Full Stack (React y Node)
 
 En la carpeta [**4_ejercicios_entrevista_tecnica**](https://github.com/eugenia1984/JS-complete/tree/main/4_ejercicios_entrevista_tecnica) veran 3 ejercicios para practicar la logica con JavaScript.
+
+En la carpeta [**Eloquent JavaSCript**](https://github.com/eugenia1984/JS-complete/tree/main/eloquent_javascript) vas a encontrar ejercicios y un poco de teoría.
 
 ---
 
