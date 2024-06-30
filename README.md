@@ -1,13 +1,13 @@
 ENGLISH
 
-# Full JavaScript
+# <img width="38" height="38" src="https://img.icons8.com/color/38/javascript--v1.png" alt="javascript"/> Full JavaScript
 
 
-## Content 📖
+## 📖 Content 📖
 
 [All the theory with the **Jon Mircha** JavaScript course exercises you can see here - it´s in another repository](https://github.com/eugenia1984/learn-JS-with-JonMircha-videos)
 
-In the [**teoria**](https://github.com/eugenia1984/JS-complete/tree/main/teoria) theres information about PWA 
+In the [**teoria**](https://github.com/eugenia1984/JS-complete/tree/main/teoria) file there's information about PWA .
 
 
 :computer: [You can take a look here of some logic exercises](https://eugenia1984.github.io/JS-complete/)
@@ -20,6 +20,7 @@ In the [**start Coding**](https://github.com/eugenia1984/JS-complete/tree/main/s
 
 Watched topics:
 
+```
    * Module 1: Values
    * Module 2: Flow control
    * Module 3: Functions
@@ -28,7 +29,8 @@ Watched topics:
    * Module 6: API
    * Module 7: DOM
    * Module 8: Extras
-   
+```
+
 In the [**buenas practicas**](https://github.com/eugenia1984/JS-complete/tree/main/buenas_practicas) folder you will see the LinkedIn Learning course *Good practise* of JavaScript.
 
 
@@ -48,7 +50,11 @@ In the [**Eloquent JavaSCript**](https://github.com/eugenia1984/JS-complete/tree
 
 ## Tech Stack 🛠️
 
-**HTML5**, **CSS3**, **JAVASCRIPT**
+- <img width="38" height="38" src="https://img.icons8.com/color/38/html-5--v1.png" alt="html5"/> **HTML5**
+
+- <img width="38" height="38" src="https://img.icons8.com/color/38/css3.png" alt="css3"/> **CSS3**
+
+- <img width="38" height="38" src="https://img.icons8.com/color/38/javascript--v1.png" alt="javascript"/> **JAVASCRIPT**
 
 ---
 
@@ -67,23 +73,23 @@ I appreciate your interest in this repository ⌨️ with ❤️ by [María Euge
 
 
 ---
-
+---
 
 ESPAÑOL
 
-# JavaScript Completo
+# <img width="38" height="38" src="https://img.icons8.com/color/38/javascript--v1.png" alt="javascript"/>  JavaScript Completo
 
 
-## Contenido 📖
+## 📖 Contenido 📖
 
 [Toda la teoría del curso de Jon Mircha de JavaScript la podés ver acá - está en otro repositorio](https://github.com/eugenia1984/learn-JS-with-JonMircha-videos)
 
 En [**teoria**](https://github.com/eugenia1984/JS-complete/tree/main/teoria) hay información de PWA 
 
-:computer: [Acá podés ver alguno ejercicios de lógica](https://eugenia1984.github.io/JS-complete/)
+[Acá podés ver algunos ejercicios de lógica](https://eugenia1984.github.io/JS-complete/)
 
 
-## Ejercicios :computer:
+## Ejercicios 
 
 1- index.html con el archivo de javaScript basicos.js <br>
 
@@ -96,6 +102,7 @@ En la carpeta [**start Coding**](https://github.com/eugenia1984/JS-complete/tree
 
 Temas vistos:
 
+```
    * Modulo 1: Valores
    * Modulo 2 : Control de flujos
    * Modulo 3 : Funciones
@@ -104,7 +111,7 @@ Temas vistos:
    * Modulo 6 : API
    * Modulo 7 : DOM
    * Modulo 8 : Extras
-
+```
 
 En la carpeta [**buenas practicas**](https://github.com/eugenia1984/JS-complete/tree/main/buenas_practicas) van a encontrar el curso de LinkedIn Learning  *JavaScript : Trucos* de *Natalia Corea*, donde da consejos y trucos prácticos que amplificarán la productividad de los desarrollos. Brinda herramientas útiles para la depuración y la ejecución de pruebas unitarias, buenas prácticas en temas de seguridad, generación de documentación y estilizado de código, entre otros conceptos clave.
 
@@ -125,8 +132,11 @@ En la carpeta [**Eloquent JavaSCript**](https://github.com/eugenia1984/JS-comple
 
 ## Stack tecnológico  🛠️
 
-**HTML5** , **CSS3** , **JAVASCRIPT**
+- <img width="38" height="38" src="https://img.icons8.com/color/38/html-5--v1.png" alt="html5"/> **HTML5**
 
+- <img width="38" height="38" src="https://img.icons8.com/color/38/css3.png" alt="css3"/> **CSS3**
+
+- <img width="38" height="38" src="https://img.icons8.com/color/38/javascript--v1.png" alt="javascript"/> **JAVASCRIPT**
 ---
 
 ## Por favor: 🎁
