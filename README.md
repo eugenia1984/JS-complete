@@ -31,20 +31,19 @@ Watched topics:
    * Module 8: Extras
 ```
 
-In the [**buenas practicas**](https://github.com/eugenia1984/JS-complete/tree/main/buenas_practicas) folder you will see the LinkedIn Learning course *Good practise* of JavaScript.
+- In the [**buenas practicas**](https://github.com/eugenia1984/JS-complete/tree/main/buenas_practicas) folder you will see the LinkedIn Learning course *Good practise* of JavaScript.
 
+- In the[**Curso JS TDD**](https://github.com/eugenia1984/JS-complete/tree/main/curso_js_tdd) folder you will see the LinkedIn Learning course  : *JavaScript: TDD y pruebas unitarias esenciales* of *Jorge Gonzalez Villanueva*.
 
+- In the [**JS avanzado**](https://github.com/eugenia1984/JS-complete/tree/main/js_avanzado) folder you will see the LinkedIn Learning course: *Advance JavaScript 1*  of *Natalia Corea*
 
-In the[**Curso JS TDD**](https://github.com/eugenia1984/JS-complete/tree/main/curso_js_tdd) folder you will see the LinkedIn Learning course  : *JavaScript: TDD y pruebas unitarias esenciales* of *Jorge Gonzalez Villanueva*.
+- In the [**JS moderno**](https://github.com/eugenia1984/JS-complete/tree/main/js_moderno) you can see some exercises from Fernando Herrera course.
 
+- In the [**numen_js_practicas**](https://github.com/eugenia1984/JS-complete/tree/main/numen_js_practicas) folder you will see some JavaScript practices in the Full Stack course of Numen Academy
 
-In the [**JS avanzado**](https://github.com/eugenia1984/JS-complete/tree/main/js_avanzado) folder you will see the LinkedIn Learning course: *Advance JavaScript 1*  of *Natalia Corea*
+- In the [**4_ejercicios_entrevista_tecnica**](https://github.com/eugenia1984/JS-complete/tree/main/4_ejercicios_entrevista_tecnica) you will find 3 logic exercises.
 
-In the [**numen_js_practicas**](https://github.com/eugenia1984/JS-complete/tree/main/numen_js_practicas) folder you will see some JavaScript practices in the Full Stack course of Numen Academy
-
-In the [**4_ejercicios_entrevista_tecnica**](https://github.com/eugenia1984/JS-complete/tree/main/4_ejercicios_entrevista_tecnica) you will find 3 logic exercises.
-
-In the [**Eloquent JavaSCript**](https://github.com/eugenia1984/JS-complete/tree/main/eloquent_javascript) you will find some exercises of JavaScript and examples
+- In the [**Eloquent JavaSCript**](https://github.com/eugenia1984/JS-complete/tree/main/eloquent_javascript) you will find some exercises of JavaScript and examples
 
 ---
 
@@ -113,19 +112,20 @@ Temas vistos:
    * Modulo 8 : Extras
 ```
 
-En la carpeta [**buenas practicas**](https://github.com/eugenia1984/JS-complete/tree/main/buenas_practicas) van a encontrar el curso de LinkedIn Learning  *JavaScript : Trucos* de *Natalia Corea*, donde da consejos y trucos prácticos que amplificarán la productividad de los desarrollos. Brinda herramientas útiles para la depuración y la ejecución de pruebas unitarias, buenas prácticas en temas de seguridad, generación de documentación y estilizado de código, entre otros conceptos clave.
+- En la carpeta [**buenas practicas**](https://github.com/eugenia1984/JS-complete/tree/main/buenas_practicas) van a encontrar el curso de LinkedIn Learning  *JavaScript : Trucos* de *Natalia Corea*, donde da consejos y trucos prácticos que amplificarán la productividad de los desarrollos. Brinda herramientas útiles para la depuración y la ejecución de pruebas unitarias, buenas prácticas en temas de seguridad, generación de documentación y estilizado de código, entre otros conceptos clave.
 
 
-En la carpeta [**Curso JS TDD**](https://github.com/eugenia1984/JS-complete/tree/main/curso_js_tdd) van a econtrar el curso de LinkedIn Learning de *Jorge Gonzalez Villanueva* : *JavaScript: TDD y pruebas unitarias esenciales*
+- En la carpeta [**Curso JS TDD**](https://github.com/eugenia1984/JS-complete/tree/main/curso_js_tdd) van a encontrar el curso de LinkedIn Learning de *Jorge Gonzalez Villanueva* : *JavaScript: TDD y pruebas unitarias esenciales*
 
-En la carpeta [**JS avanzado**](https://github.com/eugenia1984/JS-complete/tree/main/js_avanzado) van a econtrar el curso de LinkedIn Learning de *Natalia Corea* : *JavaScript Avanzado 1*
+- En la carpeta [**JS avanzado**](https://github.com/eugenia1984/JS-complete/tree/main/js_avanzado) van a encontrar el curso de LinkedIn Learning de *Natalia Corea* : *JavaScript Avanzado 1*
 
+- En la carpeta [**JS moderno**](https://github.com/eugenia1984/JS-complete/tree/main/js_moderno) son los ejercicios del curso de Fernando Herrera.
 
-En la carpeta [**numen_js_practicas**](https://github.com/eugenia1984/JS-complete/tree/main/numen_js_practicas) veran los ejercicios de practica de JavaScript que realice en el curso de Academia Numen Full Stack (React y Node)
+- En la carpeta [**numen_js_practicas**](https://github.com/eugenia1984/JS-complete/tree/main/numen_js_practicas) veran los ejercicios de practica de JavaScript que realice en el curso de Academia Numen Full Stack (React y Node)
 
-En la carpeta [**4_ejercicios_entrevista_tecnica**](https://github.com/eugenia1984/JS-complete/tree/main/4_ejercicios_entrevista_tecnica) veran 3 ejercicios para practicar la logica con JavaScript.
+- En la carpeta [**4_ejercicios_entrevista_tecnica**](https://github.com/eugenia1984/JS-complete/tree/main/4_ejercicios_entrevista_tecnica) veran 3 ejercicios para practicar la logica con JavaScript.
 
-En la carpeta [**Eloquent JavaSCript**](https://github.com/eugenia1984/JS-complete/tree/main/eloquent_javascript) vas a encontrar ejercicios y un poco de teoría.
+- En la carpeta [**Eloquent JavaSCript**](https://github.com/eugenia1984/JS-complete/tree/main/eloquent_javascript) vas a encontrar ejercicios y un poco de teoría.
 
 ---
 
