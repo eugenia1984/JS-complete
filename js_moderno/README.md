@@ -64,3 +64,37 @@ Curso de **Fernando Herrera**.
 * [Iconos](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 
 ---
+
+## Palabras reservadas
+
+```
+break - export - super -
+case - extends - switch -
+catch - finally - this -
+class - for - throw -
+const - function - try -
+continue - if - typeof -
+debugger - import - var -
+default - in - void -
+delete - instanceof - while -
+do - new - with -
+else - return - yield - let -
+enum - package - public -
+implements - private - static -
+interface - protected - await 
+```
+
+## Evitar usar
+
+```
+null - undefined - true -
+false - hasOwnProperty - 
+isNaN - Infinity - isFinite -
+NaN - length - Math -
+isPrototypeOf - prototype - valueOf -
+name - Number - Object -
+String - toString - prompt -
+alert - conform
+```
+
+---
