@@ -22,3 +22,5 @@ console.log("c: ", c);
 let fruta = "manzana"; // string
 
 // Los nombres de las variables van en camelCase
+// si es el nombre de una clase es UpperCamelCase
+// solo si la variable luego tiene numeros estos si pueden separarse con "_"
