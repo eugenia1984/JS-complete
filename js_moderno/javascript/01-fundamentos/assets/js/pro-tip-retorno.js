@@ -63,7 +63,7 @@ const imprimePropiedades = ({ nombre, codeName, estaVivo, edad = 15, trajes }) =
   console.log({codeName});
   console.log({estaVivo});
   console.log({edad});
-  console.log({trajes})
+  console.log({trajes});
 };
 
 imprimePropiedades(tony);
