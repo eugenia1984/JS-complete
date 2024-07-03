@@ -20,3 +20,12 @@ juegos.unshift('Fire Emblem')
 
 // pop, borra el ultimo elemento del array y lo regresa
 let juegoBorradoAlFinal = juegos.pop()
+
+// Splice, recibe 2 parametros, el 1ro es desde que posicion comienza a borrar, el 2do es cuantos elementos borrar.
+// Devuelve los elementos eliminados
+let juegosBorradosConSplice = juegos.splice(1, 2)
+console.log('juegosBorradosConSplice: ',juegosBorradosConSplice)
+
+// indexOf(), como parametro recibe un elemento, si el elemento esta en el array
+// devuelve su indice, si no esta devuelve -1
+let indexOfFireEmblem = juegos.indexOf('Fire Emblem')
