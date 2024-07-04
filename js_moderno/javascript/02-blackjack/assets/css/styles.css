@@ -24,8 +24,8 @@ body {
 .game-card {
   position: relative;
   width: 150px;
-  left: 90px;
-  margin-left: -70px;
+  left: 80px;
+  margin-left: -88px;
 }
 
 #player-cards,

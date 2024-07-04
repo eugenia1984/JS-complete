@@ -8,6 +8,19 @@ let deck = [];
 const types = ["C", "D", "H", "S"];
 const specials = ["A", "J", "Q", "K"];
 
+let pointsPlayer = 0;
+let pointsComputer = 0;
+
+// HTML References
+const btnAsk = document.querySelector('#btnAsk');
+const btnNew = document.querySelector('#btnNew');
+const btnStop = document.querySelector('#btnStop');
+
+const pointsHTML = document.querySelectorAll('small');
+
+const divPlayerCards = document.querySelector('#player-cards');
+const divComputerCards = document.querySelector('#computer-cards');
+
 // Create a new Deck
 const createDeck = () => {
   for (let i = 2; i <= 10; i++) {
@@ -23,7 +36,7 @@ const createDeck = () => {
   }
 
   deck = _.shuffle(deck);
-  console.log(deck);
+
   return deck;
 };
 
@@ -45,6 +58,45 @@ const cardValue = (card) => {
 };
 
 createDeck();
-cardValue("KD");
 
-console.log(cardValue(askForOneCard()))
+/***** Events ****/ 
+const computerTime = (minimumPoints) => {
+  do {
+  const card = askForOneCard();
+
+  pointsComputer = pointsComputer + cardValue(card);
+  pointsHTML[1].innerText = pointsComputer;
+
+  const imgCard = document.createElement('img');
+  imgCard.src = `assets/cartas/${card}.png`;
+  imgCard.classList.add('game-card');
+  divComputerCards.append(imgCard );  
+
+  if(minimumPoints > 21) {
+    break;
+  }
+
+  } while( (pointsComputer < minimumPoints) && (minimumPoints <= 21) );
+}
+
+btnAsk.addEventListener('click', () => {
+  const card = askForOneCard();
+
+  pointsPlayer = pointsPlayer + cardValue(card);
+  pointsHTML[0].innerText = pointsPlayer;
+
+  const imgCard = document.createElement('img');
+  imgCard.src = `assets/cartas/${card}.png`;
+  imgCard.classList.add('game-card');
+  divPlayerCards.append(imgCard );  
+
+  if(pointsPlayer > 21) {
+    console.warn('You lost');
+    btnAsk.disabled = true;
+    computerTime(pointsPlayer);
+  } else if (pointsPlayer === 21) {
+    console.warn('*** 21 points ***')
+  }
+})
+
+
