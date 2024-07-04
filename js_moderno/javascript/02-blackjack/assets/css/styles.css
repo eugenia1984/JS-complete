@@ -1,0 +1,18 @@
+:root {
+  --bg-dark: #2F4F30;
+  --black: #030303;
+  --white: #f0efef;
+}
+
+html,
+body {
+  margin: 0;
+  background-color: var(--bg-dark);
+}
+
+.title {
+  text-align: center;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 1rem;
+}
