@@ -1,30 +1,36 @@
 (() => {
   "use strict";
-  /**
-   * 2C = 2 of Clubs
-   * 2D = 2 of Diamonds
-   * 2H = 2 of Heart
-   * 2S = 2 of Spades
-   */
-  let deck = [];
-  const types = ["C", "D", "H", "S"];
-  const specials = ["A", "J", "Q", "K"];
 
-  let pointsPlayer = 0;
-  let pointsComputer = 0;
+  let deck       = [];
+  const types    = ["C", "D", "H", "S"],
+        specials = ["A", "J", "Q", "K"];
+
+  let pointsPlayers = [];
 
   // HTML References
-  const btnAsk = document.querySelector("#btnAsk");
-  const btnNew = document.querySelector("#btnNew");
-  const btnStop = document.querySelector("#btnStop");
+  const btnAsk          = document.querySelector("#btnAsk"),
+        btnNew          = document.querySelector("#btnNew"),
+        btnStop         = document.querySelector("#btnStop"),
+        pointsHTML      = document.querySelectorAll("small"),
+        divPlayerCards  = document.querySelector("#player-cards"),
+        divComputerCards = document.querySelector("#computer-cards");
 
-  const pointsHTML = document.querySelectorAll("small");
+  // Start a new game      
+  const startGame = ( numberPlayers = 2 ) => {
+    deck = createDeck();
 
-  const divPlayerCards = document.querySelector("#player-cards");
-  const divComputerCards = document.querySelector("#computer-cards");
+    for(let i = 0; i < numberPlayers; i++) {
+      pointsPlayers.push(0);
+    }
+
+    console.log({ pointsPlayers});
+  }      
 
   // Create a new Deck
   const createDeck = () => {
+
+    deck = [];
+
     for (let i = 2; i <= 10; i++) {
       for (let type of types) {
         deck.push(i + type);
@@ -37,9 +43,7 @@
       }
     }
 
-    deck = _.shuffle(deck);
-
-    return deck;
+    return _.shuffle(deck);
   };
 
   // Take one card
@@ -48,9 +52,7 @@
       throw "No cards in deck";
     }
 
-    const card = deck.pop();
-
-    return card;
+    return deck.pop();
   };
 
   const cardValue = (card) => {
@@ -59,7 +61,9 @@
     return isNaN(value) ? (value === "A" ? 11 : 10) : Number(value);
   };
 
-  createDeck();
+  const addPoints = () => {
+
+  }
 
   const computerTime = (minimumPoints) => {
     do {
@@ -122,7 +126,9 @@
   });
 
   btnNew.addEventListener("click", () => {
-    deck = createDeck();
+    console.clear();
+    startGame();
+    // deck = createDeck();
     pointsPlayer = 0;
     pointsComputer = 0;
 
