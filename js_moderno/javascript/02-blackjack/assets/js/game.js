@@ -1,34 +1,36 @@
-(() => {
+const myModule = (() => {
   "use strict";
 
-  let deck       = [];
-  const types    = ["C", "D", "H", "S"],
-        specials = ["A", "J", "Q", "K"];
-
-  let pointsPlayers = [];
+  let deck = [],
+    pointsPlayers = [];
+  const types = ["C", "D", "H", "S"],
+    specials = ["A", "J", "Q", "K"];
 
   // HTML References
-  const btnAsk          = document.querySelector("#btnAsk"),
-        btnNew          = document.querySelector("#btnNew"),
-        btnStop         = document.querySelector("#btnStop"),
-        pointsHTML      = document.querySelectorAll("small"),
-        divPlayerCards  = document.querySelector("#player-cards"),
-        divComputerCards = document.querySelector("#computer-cards");
+  const btnAsk = document.querySelector("#btnAsk"), 
+    btnNew = document.querySelector("#btnNew"),
+    btnStop = document.querySelector("#btnStop"),
+    pointsHTML = document.querySelectorAll("small"),
+    divCardsPlayers = document.querySelectorAll(".divCards");
 
-  // Start a new game      
-  const startGame = ( numberPlayers = 2 ) => {
+  // Start a new game
+  const startGame = (numberPlayers = 2) => {
     deck = createDeck();
 
-    for(let i = 0; i < numberPlayers; i++) {
+    pointsPlayers = [];
+    for (let i = 0; i < numberPlayers; i++) {
       pointsPlayers.push(0);
     }
 
-    console.log({ pointsPlayers});
-  }      
+    pointsHTML.forEach(el => el.innerText = 0);
+    divCardsPlayers.forEach(el => el.innerText ='');
+
+    btnAsk.disabled = false;
+     btnStop.disabled = false;
+  };
 
   // Create a new Deck
   const createDeck = () => {
-
     deck = [];
 
     for (let i = 2; i <= 10; i++) {
@@ -61,26 +63,23 @@
     return isNaN(value) ? (value === "A" ? 11 : 10) : Number(value);
   };
 
-  const addPoints = () => {
+  // Shift: 0 = first player and the last one will be the computer
+  const accumulatePoints = (card, shift) => {
+    pointsPlayers[shift] = pointsPlayers[shift] + cardValue(card);
+    pointsHTML[shift].innerText = pointsPlayers[shift];
 
-  }
+    return pointsPlayers[shift];
+  };
 
-  const computerTime = (minimumPoints) => {
-    do {
-      const card = askForOneCard();
+  const createCard = (card, shift) => {
+    const imgCard = document.createElement("img");
+    imgCard.src = `assets/cartas/${card}.png`;
+    imgCard.classList.add("game-card");
+    divCardsPlayers[shift].append(imgCard);
+  };
 
-      pointsComputer = pointsComputer + cardValue(card);
-      pointsHTML[1].innerText = pointsComputer;
-
-      const imgCard = document.createElement("img");
-      imgCard.src = `assets/cartas/${card}.png`;
-      imgCard.classList.add("game-card");
-      divComputerCards.append(imgCard);
-
-      if (minimumPoints > 21) {
-        break;
-      }
-    } while (pointsComputer < minimumPoints && minimumPoints <= 21);
+  const discoverWinner = () => {
+    const [minimumPoints, pointsComputer] = pointsPlayers;
 
     setTimeout(() => {
       if (pointsComputer === minimumPoints) {
@@ -95,17 +94,24 @@
     }, 90);
   };
 
+  const computerTime = (minimumPoints) => {
+    let pointsComputer = 0;
+
+    do {
+      const card = askForOneCard();
+      pointsComputer = accumulatePoints(card, pointsPlayers.length - 1);
+      createCard(card, pointsPlayers.length - 1);
+    } while (pointsComputer < minimumPoints && minimumPoints <= 21);
+
+    discoverWinner();
+  };
+
   /***** Events ****/
   btnAsk.addEventListener("click", () => {
     const card = askForOneCard();
+    const pointsPlayer = accumulatePoints(card, 0);
 
-    pointsPlayer = pointsPlayer + cardValue(card);
-    pointsHTML[0].innerText = pointsPlayer;
-
-    const imgCard = document.createElement("img");
-    imgCard.src = `assets/cartas/${card}.png`;
-    imgCard.classList.add("game-card");
-    divPlayerCards.append(imgCard);
+    createCard(card, 0);
 
     if (pointsPlayer > 21) {
       btnAsk.disabled = true;
@@ -125,20 +131,8 @@
     computerTime(pointsPlayer);
   });
 
-  btnNew.addEventListener("click", () => {
-    console.clear();
-    startGame();
-    // deck = createDeck();
-    pointsPlayer = 0;
-    pointsComputer = 0;
+  return {
+    newGame: startGame
+  };
 
-    pointsHTML[0].innerText = 0;
-    pointsHTML[1].innerText = 0;
-
-    divPlayerCards.innerHTML = "";
-    divComputerCards.innerHTML = "";
-
-    btnAsk.disabled = false;
-    btnStop.disabled = false;
-  });
 })();
