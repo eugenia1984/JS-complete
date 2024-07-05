@@ -7,7 +7,7 @@ const myModule = (() => {
     specials = ["A", "J", "Q", "K"];
 
   // HTML References
-  const btnAsk = document.querySelector("#btnAsk"), 
+  const btnAsk = document.querySelector("#btnAsk"),
     btnNew = document.querySelector("#btnNew"),
     btnStop = document.querySelector("#btnStop"),
     pointsHTML = document.querySelectorAll("small"),
@@ -22,11 +22,11 @@ const myModule = (() => {
       pointsPlayers.push(0);
     }
 
-    pointsHTML.forEach(el => el.innerText = 0);
-    divCardsPlayers.forEach(el => el.innerText ='');
+    pointsHTML.forEach((el) => (el.innerText = 0));
+    divCardsPlayers.forEach((el) => (el.innerText = ""));
 
     btnAsk.disabled = false;
-     btnStop.disabled = false;
+    btnStop.disabled = false;
   };
 
   // Create a new Deck
@@ -128,11 +128,10 @@ const myModule = (() => {
     btnAsk.disabled = true;
     btnStop.disabled = true;
 
-    computerTime(pointsPlayer);
+    computerTime(pointsPlayers[0]);
   });
 
   return {
-    newGame: startGame
+    newGame: startGame,
   };
-
 })();

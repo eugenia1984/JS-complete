@@ -98,3 +98,9 @@ alert - conform
 ```
 
 ---
+
+## Para minificar el codigo
+
+[https://www.toptal.com/developers/javascript-minifier](https://www.toptal.com/developers/javascript-minifier), copiamos el codigo de JavaScript (que va a ser el codigo de desarrollo) y copiamos el que nos da minimificado (para produccion)
+
+---
