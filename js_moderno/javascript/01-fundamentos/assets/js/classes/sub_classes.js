@@ -1,6 +1,6 @@
-console.warn('*********************  Classes  **********************');
+console.warn('*************  Classes Heredadas  ***************');
 
-class Person {
+class Person2 {
   // Atributo estatico
   static _count = 0;
   static get count() {
@@ -23,7 +23,7 @@ class Person {
     this.phrase = phrase;
     this.favoriteFood = favoriteFood;
 
-    Person._count++;
+    Person2._count++;
   }
 
   // Setter -> establece un valor
@@ -47,18 +47,22 @@ class Person {
   }
 }
 
-const spiderMan = new Person('Peter Parker', 'Spider', 'Soy Spiderman')
-spiderMan.howIAm();
-console.log('*****************************************************');
-spiderMan.myPhrase();
-console.log('*****************************************************');
-spiderMan.setFavoriteFood = 'Pizza';
-console.log(spiderMan.getFavoriteFood);
-console.log('Instance of Persona: ',Person.count);
-console.log('*****************************************************');
-Person.message();
-// Se pueden crear atributos static por fuera de la clase
-// Pero es mejor definirla DENTRO de la class
-// Primero van lso static y luego las propiedades
-Person.atributeFromOutside = 'Static attribute generated outside the class';
-console.log(Person.atributeFromOutside)
+// Clase hija / SubClase / Clase heredada
+
+class Hero extends Person2 {
+  clan = 'No clan';
+
+  constructor(name, code, phrase, clan) {
+    super(name, code, phrase); // invoco al constructor de la clase padre
+    this.clan = clan;
+  }
+
+  howIAm() {
+    console.log(`My clan: ${this.clan}`)
+    super.howIAm();
+  }
+}
+
+const ironMan = new Hero('Tony Stark', 'IronMan', 'Soy IronMan', 'Avengers');
+console.log(ironMan);
+ironMan.howIAm();
