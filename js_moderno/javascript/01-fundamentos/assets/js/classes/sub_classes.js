@@ -63,6 +63,6 @@ class Hero extends Person2 {
   }
 }
 
-const ironMan = new Hero('Tony Stark', 'IronMan', 'Soy IronMan', 'Avengers');
+const ironMan = new Hero('Tony Stark', 'IronMan', 'I am IronMan', 'Avengers');
 console.log(ironMan);
 ironMan.howIAm();

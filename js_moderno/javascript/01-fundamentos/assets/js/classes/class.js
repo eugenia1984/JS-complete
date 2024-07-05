@@ -47,7 +47,7 @@ class Person {
   }
 }
 
-const spiderMan = new Person('Peter Parker', 'Spider', 'Soy Spiderman')
+const spiderMan = new Person('Peter Parker', 'Spider', 'I am Spiderman')
 spiderMan.howIAm();
 console.log('*****************************************************');
 spiderMan.myPhrase();
