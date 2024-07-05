@@ -2,7 +2,7 @@ const fer = {
   nombre: 'Fernando',
   edad: 30,
   imprimir() {
-    console.log(`Nombre : ${this.nombre} - edad: ${edad}`)
+    console.log(`Nombre : ${this.nombre} - edad: ${this.edad}`)
   }
 }
 
@@ -15,7 +15,7 @@ const melissa = {
   nombre: 'Melissa',
   edad: 35,
   imprimir() {
-    console.log(`Nombre : ${this.nombre} - edad: ${edad}`)
+    console.log(`Nombre : ${this.nombre} - edad: ${this.edad}`)
   }
 }
 
