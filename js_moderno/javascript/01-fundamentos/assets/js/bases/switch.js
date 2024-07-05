@@ -1,7 +1,9 @@
-const dia = 0;
+console.warn('**** Switch ****');
+
+const dia11 = 0;
 
 // En el switch se evalua con el ===, valor y tipo de dato
-switch (dia) {
+switch (dia11) {
   case 0:
     console.log('Domingo')
     break;

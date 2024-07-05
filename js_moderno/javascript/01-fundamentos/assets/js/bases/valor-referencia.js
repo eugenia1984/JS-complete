@@ -1,8 +1,9 @@
+console.warn('**** Por valor / Por referencia ****');
 // Todos los PRIMITIVOS se pasan por VALOR
-let a = 10;
-let b = a;
-a = 30;
-console.log(`a: ${a}, b: ${b}`);
+let a1 = 10;
+let b1 = a;
+a1 = 30;
+console.log(`a: ${a1}, b: ${b1}`);
 
 // Los no primitivos, se pasan por REFERENCIA
 let juan = { nombre: "Juan" };
@@ -16,8 +17,8 @@ const cambiarNombre = (persona) => {
 };
 
 let peter = { nombre: "Peter" };
-let tony = cambiarNombre(peter);
-console.log({ peter, tony });
+let tony2 = cambiarNombre(peter);
+console.log({ peter, tony2 });
 
 // SPRED OPERATOR, separa los elementos, rompe la referencia en JS
 let ana2 = { ...juan };

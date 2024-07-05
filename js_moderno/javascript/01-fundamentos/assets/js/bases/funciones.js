@@ -1,4 +1,6 @@
 // Defino la funcion, por buena practica arriba defino la funcion y debajo la invoco
+console.warn('**** Funciones ****');
+
 function saludar() {
   console.log('Hola mundo')
 }

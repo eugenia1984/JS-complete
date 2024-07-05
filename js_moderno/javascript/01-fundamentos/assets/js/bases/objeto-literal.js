@@ -1,3 +1,5 @@
+console.warn('**** Objeto literal ****');
+
 let personaje = {
   nombre: 'Tony Stark',
   codeName: 'Ironman',
@@ -24,7 +26,7 @@ console.log('Última película: ', personaje["ultima-pelicula"]) // aca no se pu
 
 delete personaje.edad // con delete le borro la propiedad
 
-const entriesPares = Object.entries(personajes) // para tener en array cada par propiedad - valor
+const entriesPares = Object.entries(personaje) // para tener en array cada par propiedad - valor
 console.log('entriesPares: ', entriesPares) 
 
 personaje.casado = true // asi agrego una propiedad - valor

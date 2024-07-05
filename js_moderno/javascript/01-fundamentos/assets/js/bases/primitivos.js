@@ -7,6 +7,8 @@
 // NUMBER: integers, floats, etc
 // STRING: cadena de caracteres
 // SYMBOL: valor único que no puede ser igual a ningún otro valor
+console.warn('**** Primitivos ****');
+
 let fullName = "Anna Martin"
 console.log('fullName: ', fullName)
 // Reasignamos el valor a la misma variable

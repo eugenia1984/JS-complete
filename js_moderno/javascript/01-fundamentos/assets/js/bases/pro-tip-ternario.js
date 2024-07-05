@@ -16,11 +16,11 @@ const amigosArr = [
 // Como amigo es true vemos Thor
 
 const note = 65
-const grado = nota >= 95 ? 'A+' :
-              nota >= 90 ? 'A' :
-              nota >= 85 ? 'B+' :
-              nota >= 80 ? 'B' :
-              nota >= 75 ? 'C+' :
-              nota >= 70 ? 'C' : 'F'
+const grado = note >= 95 ? 'A+' :
+              note >= 90 ? 'A' :
+              note >= 85 ? 'B+' :
+              note >= 80 ? 'B' :
+              note >= 75 ? 'C+' :
+              note >= 70 ? 'C' : 'F'
 
-console.log({ nota, grado})
+console.log({ note, grado})

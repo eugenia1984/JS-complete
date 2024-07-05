@@ -1,8 +1,8 @@
 /******************************
  *********   Arrays  **********
  *****************************/
-
 // un conjunto de datos, pueden ser del mismo tipo de dato o no
+cosole.warn('***** Arrays ****');
 const arr = new Array(10) // un array que tendra 10 elementos
 const arr2 = []
 

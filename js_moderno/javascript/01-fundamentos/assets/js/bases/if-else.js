@@ -1,3 +1,4 @@
+console.warn('**** IF - ELSE ****')
 let numero = 5;
 
 // IF ( Si )
@@ -13,7 +14,7 @@ if (numero >= 10) {
 }
 
 const hoy = new Date();
-let dia = hot.getDay();
+let dia = hoy.getDay();
 console.log("Dia: ", dia);
 
 if (dia === 0) {
