@@ -20,7 +20,6 @@ const melissa = {
 }
 
 fer.imprimir();
-pedro.imprimir();
 
 // Era la alternativa, para crear objetos
 // Pero no puedo establecer propiedades privadas
