@@ -1,5 +1,7 @@
 import _ from "underscore";
 import { createDeck as createNewDeck } from "./use-cases/create-deck";
+import { askForOneCard } from "./use-cases/ask-for-one-card";
+import { cardValue } from "./use-cases/card-value";
 
 let deck = [],
   pointsPlayers = [];
@@ -30,21 +32,6 @@ const startGame = (numberPlayers = 2) => {
 
   btnAsk.disabled = false;
   btnStop.disabled = false;
-};
-
-// Take one card
-const askForOneCard = () => {
-  if (deck.length === 0) {
-    throw "No cards in deck";
-  }
-
-  return deck.pop();
-};
-
-const cardValue = (card) => {
-  const value = card.substring(0, card.length - 1);
-
-  return isNaN(value) ? (value === "A" ? 11 : 10) : Number(value);
 };
 
 // Shift: 0 = first player and the last one will be the computer
@@ -82,7 +69,7 @@ const computerTime = (minimumPoints) => {
   let pointsComputer = 0;
 
   do {
-    const card = askForOneCard();
+    const card = askForOneCard(deck);
     pointsComputer = accumulatePoints(card, pointsPlayers.length - 1);
     createCard(card, pointsPlayers.length - 1);
   } while (pointsComputer < minimumPoints && minimumPoints <= 21);
@@ -96,7 +83,7 @@ btnNew.addEventListener("click", () => {
 });
 
 btnAsk.addEventListener("click", () => {
-  const card = askForOneCard();
+  const card = askForOneCard(deck);
   const pointsPlayer = accumulatePoints(card, 0);
 
   createCard(card, 0);
