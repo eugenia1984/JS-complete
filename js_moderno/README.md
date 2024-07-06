@@ -104,3 +104,37 @@ alert - conform
 [https://www.toptal.com/developers/javascript-minifier](https://www.toptal.com/developers/javascript-minifier), copiamos el codigo de JavaScript (que va a ser el codigo de desarrollo) y copiamos el que nos da minimificado (para produccion)
 
 ---
+
+## Vite
+
+1. Crear el proyecto inicializando **Vite**:
+
+```BASH
+npm create vite
+```
+
+2. Completar con...
+
+... el nombre
+
+... si usamos JS/React/Vue/etc
+
+... si usamos JS/TS.
+
+3. Entramos a la carpeta creada y:
+
+```BASH
+npm install
+npm run dev
+```
+
+Y se puede ver en un navegador en: [http://localhost:5173/](http://localhost:5173/)
+
+- Es una **aplicación de Node**, por eso tenemos los `node_modules` y el archivo `package.json`.
+
+- Para hacer el build: 
+```BASH
+npm run build
+```
+
+---
