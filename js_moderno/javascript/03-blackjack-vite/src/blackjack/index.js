@@ -13,6 +13,7 @@ const btnAsk = document.querySelector("#btnAsk"),
   pointsHTML = document.querySelectorAll("small"),
   divCardsPlayers = document.querySelectorAll(".divCards");
 
+// Create a new Deck
 deck = createNewDeck(types, specials);
 
 // Start a new game
@@ -30,8 +31,6 @@ const startGame = (numberPlayers = 2) => {
   btnAsk.disabled = false;
   btnStop.disabled = false;
 };
-
-// Create a new Deck
 
 // Take one card
 const askForOneCard = () => {
