@@ -168,6 +168,16 @@ npm run build
 
 12. Creo el archivo `vite.config.js` que es archivo de configuración de Vit, porque sino como GitHub me despliega el projecto a partir de una subcarpeta, no voy a ver las imagenes ni el css, porque estaba como ruta relativa. Si esto fuera una aplicación con React este archivo ya viene.
 
+```JavaScript
+import { defineConfig } from "vite";
+
+export default defineConfig({
+  base: '/nombre-del-repositorio/'
+});
+```
+
+En el **Base** debo agregar el nombre del directorio, y ahora si se va a ver todo, cuando nuevamente haga un `npm run build`.
+
 ---
 
 ### Git Cheat Sheet
