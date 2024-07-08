@@ -178,6 +178,8 @@ export default defineConfig({
 
 En el **Base** debo agregar el nombre del directorio, y ahora si se va a ver todo, cuando nuevamente haga un `npm run build`.
 
+Se dispara un GitHub Action y hace un nuevo deploy del proyecto.
+
 ---
 
 ### Git Cheat Sheet
