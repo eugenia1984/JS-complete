@@ -164,6 +164,10 @@ npm run build
 
 10. Luego de hacer el build con `npm run build`renombramos la carpeta `dist` por `docs`.
 
+11. Voy a la parte de `pages` en **source**: `Deploy from a branch`. En **branch**: `main` / `/docs`, que es la carpeta que renombre del build. Para tener la página el repositorio debe ser publico (si es privado no se puede). Y me muestra la URL del codigo.
+
+12. Creo el archivo `vite.config.js` que es archivo de configuración de Vit, porque sino como GitHub me despliega el projecto a partir de una subcarpeta, no voy a ver las imagenes ni el css, porque estaba como ruta relativa. Si esto fuera una aplicación con React este archivo ya viene.
+
 ---
 
 ### Git Cheat Sheet
