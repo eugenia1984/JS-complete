@@ -1,7 +1,10 @@
 import _ from "underscore";
-import { createDeck as createNewDeck } from "./use-cases/create-deck";
-import { askForOneCard } from "./use-cases/ask-for-one-card";
-import { cardValue } from "./use-cases/card-value";
+import {
+  cardValue,
+  askForOneCard,
+  createNewDeck,
+  createCard,
+} from "./use-cases";
 
 let deck = [],
   pointsPlayers = [];
@@ -42,13 +45,6 @@ const accumulatePoints = (card, shift) => {
   return pointsPlayers[shift];
 };
 
-const createCard = (card, shift) => {
-  const imgCard = document.createElement("img");
-  imgCard.src = `/assets/${card}.png`;
-  imgCard.classList.add("game-card");
-  divCardsPlayers[shift].append(imgCard);
-};
-
 const discoverWinner = () => {
   const [minimumPoints, pointsComputer] = pointsPlayers;
 
@@ -71,7 +67,7 @@ const computerTime = (minimumPoints) => {
   do {
     const card = askForOneCard(deck);
     pointsComputer = accumulatePoints(card, pointsPlayers.length - 1);
-    createCard(card, pointsPlayers.length - 1);
+    createCard(card, pointsPlayers.length - 1, divCardsPlayers);
   } while (pointsComputer < minimumPoints && minimumPoints <= 21);
 
   discoverWinner();
@@ -86,7 +82,7 @@ btnAsk.addEventListener("click", () => {
   const card = askForOneCard(deck);
   const pointsPlayer = accumulatePoints(card, 0);
 
-  createCard(card, 0);
+  createCard(card, 0, divCardsPlayers);
 
   if (pointsPlayer > 21) {
     btnAsk.disabled = true;
