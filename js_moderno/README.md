@@ -138,8 +138,33 @@ npm run build
 ```
 
 ---
+---
 
 ## GIT: GITHUB y GITHUB PAGES
+
+
+1. Instalar **Git**
+
+2. Configurar el usuario con `git config --global "nombre de usuario"` e email: `git config --globa l"example@email.com"`. Asi cuando se hace el commit estará este user y e-mail.
+
+3. Creamos un nuevo repositorio en GitHub, lo nombremos, agregamos descripcion, detallamos privado/publico, detallamos si incluimos readme o no y queda creado.
+
+4. Vualvo a mi proyecto local, con `git init` voy a inicializar **git**.
+
+5. `git add .`, paso mis archivos al stage area y hago el commit: `git commit -m "aca el mensaje del commit"`.
+
+6. Renombro la rama principal como main: `git branch -M main`.
+
+7. `git remote add origin https://github.com/eugenia1984/...` lo relaciono con el repositorio creado.
+
+8. `git push -u origin main`, subo mis cambios.
+
+9. Al recargar GitHub voy a ver mis archivos locales en el repositorio
+
+
+10. Luego de hacer el build con `npm run build`renombramos la carpeta `dist` por `docs`.
+
+---
 
 ### Git Cheat Sheet
 
