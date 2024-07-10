@@ -2,6 +2,20 @@
 
 Curso de **Fernando Herrera**.
 
+---
+
+## PROYECTOS
+
+- **01 Fundamentos**: bases de JavaScript, Ciclos y Clases.
+
+- **02 BlackJack** en Vanilla JavaScript
+
+- **03 BlackJack Vite** en Vanilla JavaScript creando el proyecto en Vite
+
+- **04 Todo App**
+
+---
+---
 ## Instalaciones recomendadas - Curso de JavaScript
 
 1. Instalar Node
@@ -37,32 +51,6 @@ Curso de **Fernando Herrera**.
 * [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
 
 ---
-
-### Configuración del Bracket Pair Colorizer 2
-
-#### Obsoleto, pero aún lo pueden usar
-
-[Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
-
-```
-"bracket-pair-colorizer-2.colors": [
-    "#fafafa",
-    "#9F51B6",
-    "#F7C244",
-    "#F07850",
-    "#9CDD29",
-    "#C497D4"
-],
-```
-
----
-
-### Tema que estoy usando en VSCode:
-
-* [Monokai Night](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-monokai-night)
-
-* [Iconos](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-
 ---
 
 ## Palabras reservadas
