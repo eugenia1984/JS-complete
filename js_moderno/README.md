@@ -8,11 +8,11 @@ Curso de **Fernando Herrera**.
 
 - **01 Fundamentos**: bases de JavaScript, Ciclos y Clases.
 
-- **02 BlackJack** en Vanilla JavaScript
+- **02 BlackJack** en Vanilla JavaScript.
 
-- **03 BlackJack Vite** en Vanilla JavaScript creando el proyecto en Vite
+- **03 BlackJack Vite** en Vanilla JavaScript creando el proyecto en Vite.
 
-- **04 Todo App**
+- **04 Todo App** una aplicación de Tareas creada con Vite.
 
 ---
 ---
