@@ -17,5 +17,10 @@ const state = {
 };
 
 const initStore = () => {
-  console.log('Init store...')
-}
+  console.log("Init store...");
+  console.log("state: ", state);
+};
+
+export default {
+  initStore,
+};
