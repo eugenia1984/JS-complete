@@ -12,6 +12,9 @@ const state = {
     new Todo("Piedra del alma"),
     new Todo("Piedra del infinito"),
     new Todo("Piedra del tiempo"),
+    new Todo('Piedra del poder'),
+    new Todo('Piedra del campo'),
+    new Todo('Piedra del destino')
   ],
   filter: Filters.All,
 };
@@ -21,53 +24,89 @@ const initStore = () => {
   console.log("state: ", state);
 };
 
-
 const loadStore = () => {
-  throw new Error('Not implemented');
-}
+  throw new Error("Not implemented");
+};
+
+const getTodos = (filter = Filters.All) => {
+  switch (filter) {
+    case Filters.All:
+      return state.todos;
+      break;
+
+    case Filters.Completed:
+      return state.todos.filter((todo) => todo.done);
+      break;
+
+    case Filters.Pending:
+      return state.todos.filter((todo) => !todo.done);
+      break;
+
+    default:
+      throw new Error(`Option ${filter} is not valid`);
+      break;
+  }
+};
 
 /**
- * 
+ *
  * @param {String} description - todo description
  */
 const addTodo = (description) => {
-  throw new Error('Not implemented');
-}
+  if (!description) throw new Error("Description is required");
+
+  state.todos.push(new Todo(description));
+};
 
 /**
- * 
+ *
  * @param {String} todoId - todo unique identifier
  */
-const toggleTodo = ( todoId) => {
-  throw new Error('Not implemented');
-} 
+const toggleTodo = (todoId) => {
+  state.todos = state.todos.map(todo => {
+    if(todo.id === todoId) {
+      todo.done = !todo.done;
+    }
+
+    return todo;
+  });
+};
 
 /**
- * 
+ *
  * @param {String} todoId - todo unique identifier
  */
-const deleteTodo = ( todoId) => {
-  throw new Error('Not implemented');
-}
+const deleteTodo = (todoId) => {
+  state.todos = state.todos.filter((todo) => todo.id !== todoId);
+};
 
 const deleteCompleted = () => {
-  throw new Error('Not implemented');
-}
+  state.todos = state.todos.filter((todo) => todo.done);
+};
 
+/**
+ *
+ * @param {Filters} newFilter - Filer to set: All, Completed, Pending
+ */
 const setFilter = (newFilter = Filters.All) => {
-  throw new Error('Not implemented');
-}
+  if (Object.keys(Filters).includes(newFilter))
+    return (state.filter = newFilter);
+
+  throw new Error(`Option ${newFilter} is not valid`);
+};
 
 const getCurrentFilter = () => {
-  throw new Error('Not implemented');
-}
+  return state.filter.toString();
+};
 
 export default {
   initStore,
   loadStore,
+  getTodos,
+  addTodo,
   toggleTodo,
   deleteTodo,
   deleteCompleted,
   setFilter,
-  getCurrentFilter
+  getCurrentFilter,
 };
