@@ -1,7 +1,7 @@
 // Estado global de la aplicacion
 import { Todo } from "../todos/models/todo.model";
 
-const Filters = {
+export const Filters = {
   All: "all",
   Completed: "completed",
   Pending: "pending",
@@ -12,9 +12,9 @@ const state = {
     new Todo("Piedra del alma"),
     new Todo("Piedra del infinito"),
     new Todo("Piedra del tiempo"),
-    new Todo('Piedra del poder'),
-    new Todo('Piedra del campo'),
-    new Todo('Piedra del destino')
+    new Todo("Piedra del poder"),
+    new Todo("Piedra del campo"),
+    new Todo("Piedra del destino"),
   ],
   filter: Filters.All,
 };
@@ -25,16 +25,18 @@ const initStore = () => {
 };
 
 const loadStore = () => {
-  if(!localStorage.getItem('state'))  return;
+  if (!localStorage.getItem("state")) return;
 
-  const { todos = [], filter = Filters.All}  = JSON.stringify(loadStore.getItem('state')); 
+  const { todos = [], filter = Filters.All } = JSON.stringify(
+    localStorage.getItem("state")
+  );
   state.todos = todos;
   state.filter = filter;
 };
 
 const saveStateToLocalStorage = () => {
-  localStorage.setItem('state', JSON.stringify(state));
-}
+  localStorage.setItem("state", JSON.stringify(state));
+};
 
 const getTodos = (filter = Filters.All) => {
   switch (filter) {
@@ -65,7 +67,7 @@ const addTodo = (description) => {
 
   state.todos.push(new Todo(description));
 
-  saveStateToLocalStorage(); 
+  saveStateToLocalStorage();
 };
 
 /**
@@ -73,15 +75,15 @@ const addTodo = (description) => {
  * @param {String} todoId - todo unique identifier
  */
 const toggleTodo = (todoId) => {
-  state.todos = state.todos.map(todo => {
-    if(todo.id === todoId) {
+  state.todos = state.todos.map((todo) => {
+    if (todo.id === todoId) {
       todo.done = !todo.done;
     }
 
     return todo;
   });
 
-  saveStateToLocalStorage(); 
+  saveStateToLocalStorage();
 };
 
 /**
@@ -90,12 +92,12 @@ const toggleTodo = (todoId) => {
  */
 const deleteTodo = (todoId) => {
   state.todos = state.todos.filter((todo) => todo.id !== todoId);
-  saveStateToLocalStorage(); 
+  saveStateToLocalStorage();
 };
 
 const deleteCompleted = () => {
-  state.todos = state.todos.filter((todo) => todo.done);
-  saveStateToLocalStorage(); 
+  state.todos = state.todos.filter((todo) => !todo.done);
+  saveStateToLocalStorage();
 };
 
 /**
@@ -104,7 +106,7 @@ const deleteCompleted = () => {
  */
 const setFilter = (newFilter = Filters.All) => {
   if (Object.keys(Filters).includes(newFilter)) {
-    saveStateToLocalStorage(); 
+    saveStateToLocalStorage();
     return (state.filter = newFilter);
   }
 
