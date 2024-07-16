@@ -236,8 +236,7 @@ body {
 }
 
 .todo-list li .destroy {
-  /*display: none;
-  */position: absolute;
+  position: absolute;
   top: 0;
   right: 18px;
   bottom: 0;

@@ -28,6 +28,10 @@ const loadStore = () => {
   throw new Error("Not implemented");
 };
 
+const saveStateToLocalStorage = () => {
+  localStorage
+}
+
 const getTodos = (filter = Filters.All) => {
   switch (filter) {
     case Filters.All:
