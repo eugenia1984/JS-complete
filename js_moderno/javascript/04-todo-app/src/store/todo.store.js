@@ -27,7 +27,9 @@ const initStore = () => {
 const loadStore = () => {
   if(!localStorage.getItem('state'))  return;
 
-  
+  const { todos = [], filter = Filters.All}  = JSON.stringify(loadStore.getItem('state')); 
+  state.todos = todos;
+  state.filter = filter;
 };
 
 const saveStateToLocalStorage = () => {

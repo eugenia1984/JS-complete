@@ -85,15 +85,17 @@ body {
 
 .todoapp h1 {
   position: absolute;
-  top: -120px;
+  top: -90px;
   width: 100%;
-  font-size: 1rem;
-  font-weight: 200;
+  font-size: 1.75rem;
+  font-weight: 600;
   text-align: center;
   color: var(--primary);
   -webkit-text-rendering: optimizeLegibility;
   -moz-text-rendering: optimizeLegibility;
   text-rendering: optimizeLegibility;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .new-todo,
