@@ -151,7 +151,8 @@ body {
 .toggle-all + label:before {
   content: "+";
   font-size: 22px;
-  color: var(--border-white);
+  font-weight: 800;
+  color: var(--primary);
   padding: 10px 27px 10px 27px;
 }
 
@@ -238,7 +239,7 @@ body {
   /*display: none;
   */position: absolute;
   top: 0;
-  right: 10px;
+  right: 18px;
   bottom: 0;
   width: 30px;
   height: 30px;
@@ -248,13 +249,13 @@ body {
   color: var(--text-gray-dark);
   margin-bottom: 11px;
   transition: color 0.2s ease-out;
-  border: 1px solid var(--text-gray-dark);
-  border-radius: 7px;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  -ms-border-radius: 7px;
-  -o-border-radius: 7px;
-  padding: 2px 4px;
+  border: 2px solid var(--primary);
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  padding: 1px 2px;
 }
 
 .todo-list li .destroy:hover {
