@@ -1,4 +1,4 @@
-# JavaSCript moderno
+# JavaScript moderno
 
 Curso de **Fernando Herrera**.
 
@@ -14,9 +14,19 @@ Curso de **Fernando Herrera**.
 
 - **04 Todo App** una aplicación de Tareas creada con Vite.
 
+Donde se pueden marcar como completadas las tareas:
+
+![image](https://github.com/user-attachments/assets/199906c5-71b4-4017-9fbf-dd1eda72bb87)
+
+Y filtras por los estados: Pendiente, Completadas y el listado de todas:
+
+![image](https://github.com/user-attachments/assets/22ce63c8-6805-4f88-a434-ebc885221583)
+
 - **05 Advanced** con algunos ejercicios:
 
 -01-environments, para ver las variables de entorno.
+
+![image](https://github.com/user-attachments/assets/8cf30611-7bf3-450c-8d9c-322535646cfa)
 
 ---
 ---
