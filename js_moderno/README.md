@@ -14,6 +14,8 @@ Curso de **Fernando Herrera**.
 
 - **04 Todo App** una aplicación de Tareas creada con Vite.
 
+- **05 Advanced**
+
 ---
 ---
 ## Instalaciones recomendadas - Curso de JavaScript
