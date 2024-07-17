@@ -1,13 +1,13 @@
 import html from "./app.html?raw";
 import todoStore, { Filters } from "../store/todo.store";
-import { renderTodos, renderPending  } from "./use-cases";
+import { renderTodos, renderPending } from "./use-cases";
 
 const elementIDs = {
   ClearCompletedButton: ".clear-completed",
   TodoList: ".todo-list",
   NewTodoInput: "#new-todo-input",
   TodoFilters: ".filtro",
-  PendingCountLabel: '.pending-count'
+  PendingCountLabel: "#pending-count",
 };
 
 /**
@@ -22,8 +22,8 @@ export const App = (elementId) => {
   };
 
   const updatePendingCount = () => {
-    renderPending(elementIDs.PendingCountLabel); 
-  }
+    renderPending(elementIDs.PendingCountLabel);
+  };
 
   // When App is loaded
   (() => {
@@ -58,10 +58,10 @@ export const App = (elementId) => {
   });
 
   todoListUL.addEventListener("click", (event) => {
-    const isDEstroyElement = event.target.className === "destroy";
+    const isDestroyElement = event.target.className === "destroy";
     const element = event.target.closest("[data-id]");
 
-    if (!element || !isDEstroyElement) return;
+    if (!element || !isDestroyElement) return;
 
     todoStore.deleteTodo(element.getAttribute("data-id"));
     displayTodos();
@@ -81,7 +81,6 @@ export const App = (elementId) => {
         case "All":
           todoStore.setFilter(Filters.All);
           break;
-
         case "Pending":
           todoStore.setFilter(Filters.Pending);
           break;

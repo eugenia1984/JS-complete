@@ -1,10 +1,10 @@
-// Estado global de la aplicacion
+// Global state of the application
 import { Todo } from "../todos/models/todo.model";
 
 export const Filters = {
   All: "all",
-  Completed: "completed",
-  Pending: "pending",
+  Completed: "Completed",
+  Pending: "Pending",
 };
 
 const state = {
@@ -39,19 +39,15 @@ const getTodos = (filter = Filters.All) => {
   switch (filter) {
     case Filters.All:
       return state.todos;
-      break;
 
     case Filters.Completed:
       return state.todos.filter((todo) => todo.done);
-      break;
 
     case Filters.Pending:
       return state.todos.filter((todo) => !todo.done);
-      break;
 
     default:
       throw new Error(`Option ${filter} is not valid`);
-      break;
   }
 };
 
@@ -102,16 +98,12 @@ const deleteCompleted = () => {
  * @param {Filters} newFilter - Filer to set: All, Completed, Pending
  */
 const setFilter = (newFilter = Filters.All) => {
-  if (Object.keys(Filters).includes(newFilter)) {
-    saveStateToLocalStorage();
-    return (state.filter = newFilter);
-  }
-
-  throw new Error(`Option ${newFilter} is not valid`);
+  state.filter = newFilter;
+  saveStateToLocalStorage();
 };
 
 const getCurrentFilter = () => {
-  return state.filter.toString();
+  return state.filter;
 };
 
 export default {
