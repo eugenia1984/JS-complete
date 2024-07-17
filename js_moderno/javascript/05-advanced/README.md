@@ -25,3 +25,11 @@ Con `process.env`se suele tener as variables, pero no en Vite, con Vite es : `im
 - SSR: Server Side Rendering
 
 Para ver nuestras variables del archivo `.env`debemos anteponer `VITE_` y ahora si se ven las variables del archivo `.env`.
+
+---
+
+## CALLBACKS
+
+Los **callbacks** son funciones que reciben como argumento otra función y se invoca a esa función.
+
+---
