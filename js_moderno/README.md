@@ -10,7 +10,11 @@ Curso de **Fernando Herrera**.
 
 - **02 BlackJack** en Vanilla JavaScript.
 
+![image](https://github.com/user-attachments/assets/09ca457d-2e3f-4d58-98e3-5c40b687e8c3)
+
 - **03 BlackJack Vite** en Vanilla JavaScript creando el proyecto en Vite.
+
+![image](https://github.com/user-attachments/assets/a234dbb3-6e5c-4231-9fbd-ab7749d6d91a)
 
 - **04 Todo App** una aplicación de Tareas creada con Vite.
 
