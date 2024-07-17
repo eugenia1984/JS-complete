@@ -21,3 +21,7 @@ Con `process.env`se suele tener as variables, pero no en Vite, con Vite es : `im
   SSR: false
 }
 ```
+
+- SSR: Server Side Rendering
+
+Para ver nuestras variables del archivo `.env`debemos anteponer `VITE_` y ahora si se ven las variables del archivo `.env`.
