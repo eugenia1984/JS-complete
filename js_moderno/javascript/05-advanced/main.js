@@ -5,6 +5,7 @@ import { environmentsComponent } from "./src/concepts/01-environments";
 import { callbacksComponent } from "./src/concepts/02-callbacks";
 import { promiseComponent } from "./src/concepts/03-promises";
 import { promiseHellTip1Component } from "./src/concepts/05-promise-hell-tip1";
+import { promiseAllComponent } from "./src/concepts/06-promise-all";
 
 document.querySelector("#app").innerHTML = `
   <div>
@@ -26,4 +27,5 @@ const element = document.querySelector(".card");
 // environmentsComponent (element);
 // callbacksComponent(element);
 // promiseComponent(element);
-promiseHellTip1Component(element);
+// promiseHellTip1Component(element);
+promiseAllComponent(element);

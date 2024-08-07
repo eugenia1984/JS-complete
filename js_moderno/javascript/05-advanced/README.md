@@ -157,5 +157,23 @@ findHero(id1)
     .catch(renderError);
 ```
 
+PROMISE ALL
+
+El `Promise.all()` es un método estático que tiene el constructor de las `Promise`; sera un array de promesas. Se ejecutan todas de manera simultanea, por eso no deben depender una de otras para poder utilizarlo.
+
+El `Promise.all()` me regresa como un array con todos los valores resultos, que los agarro en el `then()`.
+
+Si una da promesa da error, va a ser atrapado en el catch. Con que una de error se ejecuta el catch para todas.
     
+```JavaScript
+ Promise.all([
+    findHero(id1),
+    findHero(id2),
+  ])
+  .then( ([hero1, hero2]) => renderTwoHeroes(hero1, hero2))
+  .catch(renderError);
+```
+
+En el array de resultados, como se que tengo hero1 y hero2, lo desestructuro.
+
 ---
