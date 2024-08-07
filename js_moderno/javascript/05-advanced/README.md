@@ -182,6 +182,45 @@ En el array de resultados, como se que tengo hero1 y hero2, lo desestructuro.
 
 ## ASYNC
 
-Transforma la función para regresar la promesa que resulva lo que se especifica en el return
+Transforma la función para regresar la promesa que resuelva lo que se especifica en el return.
+
+Las funciones asincronas (y las que trabajan con Promise) no siguen el hilo principal, OJO JavaScript no es multi tread, sino que la manda a la pila de promesas (tarea por hacer) y sigue con el codigo sincrono y cuando las promesas esten resueltas ahi las usa porque vuelve al stack del trabajo pendiente.
+
+-> Se ejecuta a destiempo del hilo principal.
+
+
+-> Si tengo un **error** con el id, no voy a tener un hero, entonces yo lanzo el error con el ***throw** y lo agarro en el **Catch()**:
+
+```JavaScript
+import { heroes } from "../data/heroes";
+
+/**
+ *
+ * @param {HTMLDivElement} element
+ */
+export const asyncComponent = (element) => {
+  const id1 = "5d86371f9f80b591f499df32";
+  console.log("Inicio del componente");
+
+  findHero(id1)
+    .then((name) => (element.innerHTML = name))
+    .catch((error) => (element.innerHTML = error));
+
+  console.log("Fin del componente");
+};
+
+/**
+ *
+ * @param {String} id
+ * @returns {Promise<String>}
+ */
+const findHero = async (id) => {
+  const hero = heroes.find((hero) => hero.id === id);
+
+  if (!hero) throw `Hero with id ${id} not found`;
+
+  return hero?.name;
+};
+```
 
 ---
