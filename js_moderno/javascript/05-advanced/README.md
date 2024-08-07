@@ -80,3 +80,50 @@ const findHero = (id, callback) => {
 ```
 
 ---
+
+## PROMISES
+
+Es un pacto entre 2 partes en las que una se compromete a hacer un trabajo y la otra está esperando el cumplimiento de la promesa, la cual se puede cumplir o no (en este último caso hayq ue manejar esto también).
+
+Va a tener un **Callback** con dos parametros: **resolve** (caso exitoso) y **reject** (caso que la promesa no se cumple).
+
+Ejemplo:
+
+```JavaScript
+/**
+ * 
+ * @param {String} id 
+ * @returns  {Promise<Object>}
+ */
+const findHero = (id) => {
+  return new Promise(( resolve, reject) => {
+    const hero = heroes.find(hero => hero.id === id );
+
+    if(here) {
+      resolve(hero);
+      return;
+    }
+
+    reject(`Hero with id ${id} not found`)
+  });
+};
+```
+
+
+Y usamos el **tr*y - catch**:
+
+```JavaScript
+findHero(id1)
+    .then(superHero => renderHero(superHero))
+    .catch( error => renderError(error))
+```
+
+Como el mismo argumento es el que se envia se puede resumir asi:
+
+
+```JavaScript
+findHero(id1)
+    .then(renderHero)
+    .catch(renderError)
+```
+---
