@@ -19,8 +19,8 @@ export const promiseComponent = (element) => {
   const id1 = "5d86371f25a058e5b1c8a65e";
 
   findHero(id1)
-    .then(superHero => renderHero(superHero))
-    .catch( error => renderError(error))
+    .then(renderHero)
+    .catch(renderError)
 };
 
 /**
