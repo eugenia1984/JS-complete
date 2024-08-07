@@ -176,4 +176,6 @@ Si una da promesa da error, va a ser atrapado en el catch. Con que una de error 
 
 En el array de resultados, como se que tengo hero1 y hero2, lo desestructuro.
 
+- Ademas del `Promise.all()`, tenemos el `Promise.race()`que también recibe como argumento un array de promesas, pero que en el then() vamos a tener solo la primer promesa resuelta, es decir, la que se resuelve más rápido.
+
 ---
