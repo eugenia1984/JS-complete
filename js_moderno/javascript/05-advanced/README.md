@@ -126,4 +126,36 @@ findHero(id1)
     .then(renderHero)
     .catch(renderError)
 ```
+
+OJO que se puede crear el PromiseHell (en el ejemplo en realidad el promise hell es un callback):
+
+```JavaScript
+findHero(id1)
+    .then((hero1) => {
+      findHero(id2)
+        .then((hero2) => {
+          renderTwoHeroes(hero1, hero2);
+        })
+        .catch(renderError);
+    })
+    .catch(renderError);
+```
+    
+Se puede evitar con el **PromiseAll**, siempre QUE LAS PROMESAS NO DEPENDAN ENTRE SI.
+
+Pero antes un PRO TIP, encadenar los *then()** para tener un unico **Catch()**:
+
+```JavaScript
+findHero(id1)
+    .then((hero) => {
+      hero1 = hero;
+      return findHero(id2);
+    })
+    .then((hero2) => {
+      renderTwoHeroes(hero1, hero2);
+    })
+    .catch(renderError);
+```
+
+    
 ---
