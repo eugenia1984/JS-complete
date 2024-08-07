@@ -8,6 +8,7 @@ import { promiseHellTip1Component } from "./src/concepts/05-promise-hell-tip1";
 import { promiseAllComponent } from "./src/concepts/06-promise-all";
 import { promiseRaceComponent } from "./src/concepts/07-promise-race";
 import { asyncComponent } from "./src/concepts/08-async";
+import { asyncAwaitComponent } from "./src/concepts/09-async-await";
 
 document.querySelector("#app").innerHTML = `
   <div>
@@ -32,4 +33,5 @@ const element = document.querySelector(".card");
 // promiseHellTip1Component(element);
 // promiseAllComponent(element);
 // promiseRaceComponent(element);
-asyncComponent(element);
+// asyncComponent(element);
+asyncAwaitComponent(element);

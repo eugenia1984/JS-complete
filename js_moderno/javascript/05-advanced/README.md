@@ -224,3 +224,7 @@ const findHero = async (id) => {
 ```
 
 ---
+
+## ASYNC - AWAIT
+
+---
