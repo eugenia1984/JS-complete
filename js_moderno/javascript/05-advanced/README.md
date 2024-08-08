@@ -229,4 +229,6 @@ const findHero = async (id) => {
 
 **Await**, esperate que el resultado de la función con **Async** termine y despues te ejecutas (promesa).
 
+Los errores los manejo encerrando a la función con await en un **try-catch**.
+
 ---
