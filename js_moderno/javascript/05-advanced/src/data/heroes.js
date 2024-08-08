@@ -52,7 +52,7 @@ export const heroes = [
     picture:
       "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/4/48/Falcon_AIW_Profile.jpg/revision/latest/scale-to-width-down/310?cb=20180518212822",
     squarePic:
-      "https://www.tooys.mx/pub/media/catalog/product/cache/89d4a95274a31fe8bdfcc437494b2c9e/f/a/falcon_marvel_gallery_5c4dc5df6c14d_-_copia.jpg",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/TheFalcon.jpg/220px-TheFalcon.jpg",
     name: "Falcon",
   },
   {

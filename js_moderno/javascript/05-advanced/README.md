@@ -227,4 +227,6 @@ const findHero = async (id) => {
 
 ## ASYNC - AWAIT
 
+**Await**, esperate que el resultado de la función con **Async** termine y despues te ejecutas (promesa).
+
 ---
