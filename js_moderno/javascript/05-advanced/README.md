@@ -338,3 +338,13 @@ const getHeroAsync = async(id) => {
 ```
 
 ---
+
+## Funciones generadoras
+
+- No se puede usar mediante arrow functions
+
+- `function*`
+
+- Genera una secuencia de valores, los cuales podemso utilizarlos para difernetes casos.
+
+---
