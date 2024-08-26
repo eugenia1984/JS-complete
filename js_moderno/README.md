@@ -32,6 +32,8 @@ Y filtras por los estados: Pendiente, Completadas y el listado de todas:
 
 ![image](https://github.com/user-attachments/assets/8cf30611-7bf3-450c-8d9c-322535646cfa)
 
+Y demás temas vistos como: callbacks, promises, async/await, etc.
+
 ---
 ---
 ## Instalaciones recomendadas - Curso de JavaScript
