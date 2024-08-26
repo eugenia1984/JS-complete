@@ -34,6 +34,10 @@ Y filtras por los estados: Pendiente, Completadas y el listado de todas:
 
 Y demás temas vistos como: callbacks, promises, async/await, for await, funciones generadoras, etc.
 
+- **06 Peticiones HTTP** para usar **fetch API** de JavaScript
+
+- **07 CRUD**
+
 ---
 ---
 ## Instalaciones recomendadas - Curso de JavaScript
