@@ -51,3 +51,27 @@
 `npm run server`-> para levantar el servidor con json-server y puedo usar los sigueintes endpoints:
 
 - [http://localhost:3002/users](http://localhost:3002/users) get users list
+
+---
+
+## Estrcutura del proyecto
+
+```
+> src
+  > users
+    > mappers
+    > models
+    > presentation
+    > store
+    > use-cases
+```
+
+- **mappers**: tomamos la información que luce de una manera y la transformamos, se va a usar ya que el BackEnd usa snake_case y en el FrontEnd camelCase, entonces las key de los objetos se pasan a camelCase.
+
+- **models**: representación de como trabajar en la aplicación. Hace la aplicación más robusta y tolerante a cambios.
+
+- **presentation**: las interfaces de usuario.
+
+- **store**: donde está la información centralizada.
+
+- **use-cases**: funciones específicas como traer datos, elimar, etc.
