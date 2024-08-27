@@ -6,7 +6,15 @@ const state = {
 };
 
 const loadNextPage = async () => {
-  await loadUsersByPage(state.currentPage + 1);
+  const users = await loadUsersByPage(state.currentPage + 1);
+
+  // When you are in the last page -> no users left
+  if(users.length === 0 ) return;
+
+  // Update state
+  state.currentPage +=1;
+  state.users = users;
+
 }
 
 const loadPreviousPage = () => {
