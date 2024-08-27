@@ -2,6 +2,8 @@
 
 ## Comandos:
 
+`npm create vite@latest`-> para inicializar el proyecto, elejimos: nombre, Vanilla y JavaScript. Luego ingresamos a la carpeta del proyecto creada.
+
 `npm install` -> para instalar dependencias
 
 `npm run dev` -> para correr le proyecto
