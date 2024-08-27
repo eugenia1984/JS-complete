@@ -1,4 +1,5 @@
-import { loadUsersByPage } from '../use-cases/load-users-by-page'
+import { loadUsersByPage } from '../use-cases/load-users-by-page';
+
 const state = {
   currentPage: 0,
   users: [],
