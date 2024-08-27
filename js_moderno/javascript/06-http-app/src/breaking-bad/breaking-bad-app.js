@@ -1,10 +1,23 @@
 /**
- * 
- * @param {HTMLDivElement} element 
+ * @returns { Promise<Object> } // quote information
  */
-export const BreakingBadApp = ( element) => {
-  document.querySelector('#app-title').innerHTML = 'BreakingBad App'
-  
-  element.innerHTML = 'Loading . . .'
+const fetchQuote = async () => {
+  const res = await fetch("https://breakingbadapi.com/api/quote/random" , { mode: 'no-cors' });
+  const data = res.json();
 
-}
+  return data[0];
+};
+
+/**
+ *
+ * @param {HTMLDivElement} element
+ */
+export const BreakingBadApp = async (element) => {
+  document.querySelector("#app-title").innerHTML = "BreakingBad App";
+
+  element.innerHTML = "Loading . . .";
+
+  const quote = await fetchQuote();
+
+  element.innerHTML = 'Data searched'
+};

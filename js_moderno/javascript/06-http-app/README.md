@@ -10,7 +10,7 @@
 
 ## HTTP Request - API endpoints
 
-- **GET**: https://breakingbadapi.com/api/quote/random para obtener una quote, como por ejemplo:
+- **GET**: [https://breakingbadapi.com/api/quote/random](https://breakingbadapi.com/api/quote/random) para obtener una quote, como por ejemplo:
 
 ```JSON
 [
