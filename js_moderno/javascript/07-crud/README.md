@@ -50,7 +50,9 @@
 
 `npm run server`-> para levantar el servidor con json-server y puedo usar los siguientes endpoints:
 
-- [http://localhost:3002/users](http://localhost:3002/users) get users list
+- GET [http://localhost:3002/users](http://localhost:3002/users) para tener la lista de usuarios.
+
+- POST [http://localhost:3002/users](http://localhost:3002/users) y en el `body` de la petición enviar el objeto del usuario.
 
 ->Siempre tener el servidor corriendo, sino no se pueden ver los usuarios
 
