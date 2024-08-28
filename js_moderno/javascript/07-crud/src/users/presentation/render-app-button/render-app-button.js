@@ -1,4 +1,4 @@
-
+import  { showModal } from "../render-modal/render-modal";
 import "./render-app-button.css";
 
 /**
@@ -16,6 +16,6 @@ export const renderAppButton = ( element ) => {
 
   // EventListener
   fabButton.addEventListener('click', () => {
-    throw Error('Not implemented yet')
+    showModal();
   })
 }
