@@ -1,0 +1,9 @@
+table {
+  background-color: rgba(0,0,0, 0.348);
+  border-radius: 5x;
+  -webkit-border-radius: 5x;
+  -moz-border-radius: 5x;
+  -ms-border-radius: 5x;
+  -o-border-radius: 5x;
+  padding: 5px;
+}

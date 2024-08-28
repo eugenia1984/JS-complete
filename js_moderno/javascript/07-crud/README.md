@@ -48,9 +48,11 @@
 
 `npm run dev` -> para correr el proyecto y verlo en: [http://localhost:5173/](http://localhost:5173/)
 
-`npm run server`-> para levantar el servidor con json-server y puedo usar los sigueintes endpoints:
+`npm run server`-> para levantar el servidor con json-server y puedo usar los siguientes endpoints:
 
 - [http://localhost:3002/users](http://localhost:3002/users) get users list
+
+->Siempre tener el servidor corriendo, sino no se pueden ver los usuarios
 
 ---
 
