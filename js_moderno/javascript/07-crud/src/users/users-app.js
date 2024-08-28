@@ -1,14 +1,16 @@
-import usersStore from './store/users-store';
-import { renderTable } from './presentation/render-table/render-table';
+import usersStore from "./store/users-store";
+import { renderTable } from "./presentation/render-table/render-table";
+import { renderButtons } from "./presentation/render-buttons/render-buttons";
+
 /**
- * 
- * @param {HTMLDivElement} element 
+ *
+ * @param {HTMLDivElement} element
  */
-export const UsersApp = async ( element ) => {
-
-  element.innerHTML = 'Loading...';
+export const UsersApp = async (element) => {
+  element.innerHTML = "Loading...";
   await usersStore.loadNextPage();
-  element.innerHTML = '';
+  element.innerHTML = "";
 
-  renderTable( element );
-}
+  renderTable(element);
+  renderButtons(element);
+};
