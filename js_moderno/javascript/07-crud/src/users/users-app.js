@@ -1,6 +1,7 @@
 import usersStore from "./store/users-store";
 import { renderTable } from "./presentation/render-table/render-table";
 import { renderButtons } from "./presentation/render-buttons/render-buttons";
+import { renderAppButton } from "./presentation/render-app-button/render-app-button";
 
 /**
  *
@@ -13,4 +14,5 @@ export const UsersApp = async (element) => {
 
   renderTable(element);
   renderButtons(element);
+  renderAppButton(element);
 };
