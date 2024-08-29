@@ -52,7 +52,11 @@
 
 - GET [http://localhost:3002/users](http://localhost:3002/users) para tener la lista de usuarios.
 
+- GET `http://localhost:3002/users/{id}`, para tener la información de un usuario por su **id**.
+
 - POST [http://localhost:3002/users](http://localhost:3002/users) y en el `body` de la petición enviar el objeto del usuario.
+
+- PATCH `http://localhost:3002/users/{id}`, para actualizar un usuario por su **id**
 
 ->Siempre tener el servidor corriendo, sino no se pueden ver los usuarios
 
