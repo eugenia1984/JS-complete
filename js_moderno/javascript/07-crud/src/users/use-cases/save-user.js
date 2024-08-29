@@ -1,19 +1,20 @@
 import { User } from "../models/user";
+import { userModelToLocalhost } from "../mappers/user-to-localhost.mapper";
+
 /**
  *
  * @param {Like<User>} userLike
  */
 export const saveUser = async (userLike) => {
-  const user = new User(userLike);
-
-  // TOOD: mapper
+  const user = new User( userLike );
+  const userToSave = userModelToLocalhost(user);
 
   if (user.id) {
     throw "Update not implemented";
     return;
   }
 
-  const updatedUser = await createUser(user);
+  const updatedUser = await createUser(userToSave);
   return updatedUser;
 };
 
