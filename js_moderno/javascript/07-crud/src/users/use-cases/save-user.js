@@ -6,7 +6,11 @@ import { userModelToLocalhost } from "../mappers/user-to-localhost.mapper";
  * @param {Like<User>} userLike
  */
 export const saveUser = async (userLike) => {
-  const user = new User( userLike );
+  const user = new User(userLike);
+
+  if (!user.firstName || !user.lastName)
+    throw "First and last name are required";
+
   const userToSave = userModelToLocalhost(user);
 
   if (user.id) {
