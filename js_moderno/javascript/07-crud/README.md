@@ -58,6 +58,8 @@
 
 - PATCH `http://localhost:3002/users/{id}`, para actualizar un usuario por su **id**
 
+- DELETE `http://localhost:3002/users/{id}`, para eliminar un usuario por su **id**
+
 ->Siempre tener el servidor corriendo, sino no se pueden ver los usuarios
 
 ---
