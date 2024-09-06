@@ -57,7 +57,12 @@ Y demás temas vistos como: callbacks, promises, async/await, for await, funcion
 ![image](https://github.com/user-attachments/assets/27b3d32e-6c1e-4c9f-a72a-281570bcc201)
 
 -Creación de un nuevo usuario:
+
 ![image](https://github.com/user-attachments/assets/d90338ea-df2c-44f9-901a-e494fe59c4f1)
+
+-Edición de un usuari oya existente:
+
+![image](https://github.com/user-attachments/assets/b40152df-fb96-4f9c-9145-44dca28bd3bb)
 
 
 ---
