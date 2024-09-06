@@ -10,6 +10,7 @@ export const userModelToLocalhost = ( user ) => {
     balance,
     firstName,
     gender,
+    id,
     isActive,
     lastName
   } = user;
@@ -19,6 +20,7 @@ export const userModelToLocalhost = ( user ) => {
     balance,
     first_name: firstName,
     gender,
+    id,
     isActive,
     last_name: lastName
   }
