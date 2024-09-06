@@ -52,6 +52,14 @@ Y demás temas vistos como: callbacks, promises, async/await, for await, funcion
 -Documentación de funciones
 ```
 
+-Listado de los usarios:
+
+![image](https://github.com/user-attachments/assets/27b3d32e-6c1e-4c9f-a72a-281570bcc201)
+
+-Creación de un nuevo usuario:
+![image](https://github.com/user-attachments/assets/d90338ea-df2c-44f9-901a-e494fe59c4f1)
+
+
 ---
 ---
 ## Instalaciones recomendadas - Curso de JavaScript
