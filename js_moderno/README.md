@@ -64,6 +64,7 @@ Y demás temas vistos como: callbacks, promises, async/await, for await, funcion
 
 ![image](https://github.com/user-attachments/assets/b40152df-fb96-4f9c-9145-44dca28bd3bb)
 
+- **08-es-next**: para ver alguna de las nuevas caracterñisticas de JavaScript.
 
 ---
 ---
