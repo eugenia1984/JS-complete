@@ -16,3 +16,16 @@ Otra nueva opción: **STRUCTURE CLONE**, al que le pasamos como parametro que ne
 
 
 ---
+
+## Método with()
+
+Ayuda a crear un nuevo objeto y a la vez hacer una modificación al mismo. REgresa un nuevo arreglo, peor con la referencia de todos sus objetos.
+
+```JavaScript
+const newStateWith = state.with(index, {
+  ...state.at(index),
+  name: newName
+});
+```
+
+---

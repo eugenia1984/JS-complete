@@ -1,4 +1,4 @@
-const superHeroes = [
+const state = [
   {
     id: 1,
     name: "Batman",
@@ -17,14 +17,30 @@ const superHeroes = [
   },
 ];
 
-const superHeroesCopy = [...superHeroes];
-superHeroesCopy[0].name = "Green Lanter";
+const index = 1;
+const newName = 'Green Lantern';
 
-const superHeroesCopy2 = [...superHeroes.map(hero => ({...hero}))];
+/*
+A pesar que el .map() devuelve un nuevo arreglo,
+no regresa una nueva referencia a los objetos internos
+*/
+const newState = state.map( (hero, i) => {
 
-const superHeroesCopy3 = structuredClone(superHeroes);
+  if( i === index) {
+    hero.name = newName;
+  }
 
-console.table(superHeroes);
-console.table(superHeroesCopy);
-console.table(superHeroesCopy2);
-console.table(superHeroesCopy3);
+  // Antes se hacia el ... para romper la referencia
+  return {...hero};
+});
+
+state[0].name = 'Black volcano';
+
+console.table(newState);
+
+const newStateWith = state.with(index, {
+  ...state.at(index),
+  name: newName
+});
+
+console.table(newStateWith);
