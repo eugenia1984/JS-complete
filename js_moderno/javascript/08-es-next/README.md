@@ -29,3 +29,37 @@ const newStateWith = state.with(index, {
 ```
 
 ---
+
+## Método to
+
+```JavaScript
+const heroes = [
+  'Batman',
+  'Superman',
+  'Flash',
+  'Aquaman'
+];
+
+const heroesCopy = [
+  'Batman',
+  'Superman',
+  'Flash',
+  'Aquaman'
+];
+
+heroes.sort();
+
+console.table(heroes);
+console.table(heroesCopy);
+```
+
+En este caso el sort me va a ordenar tanto a `heroes`como a `heroesCopy`, se modifica el arreglo original y su referencia.
+
+- Hay métodos nuevos que comienzan con `.to...`:
+
+`.toSorted()` -> copia la version del arreglo original, pero regresa un nuevo arreglo con los elementos ordenados de manera ascendente por defecto. No modifica el array original.
+
+
+`.toReversed()` -> revierte el .toSorted(), como antes se usaba el `.sort()` lo ordena y tenemos el `reverse()` que revierte, pero asi antes se cambiaba el arreglo original.
+
+---
