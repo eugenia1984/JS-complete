@@ -62,4 +62,6 @@ En este caso el sort me va a ordenar tanto a `heroes`como a `heroesCopy`, se mod
 
 `.toReversed()` -> revierte el .toSorted(), como antes se usaba el `.sort()` lo ordena y tenemos el `reverse()` que revierte, pero asi antes se cambiaba el arreglo original.
 
+`.splice()`, muta el arreglo original. Ahora tenemos el `.toSpliced()`.
+
 ---
