@@ -2,8 +2,7 @@ ENGLISH
 
 # <img width="38" height="38" src="https://img.icons8.com/color/38/javascript--v1.png" alt="javascript"/> Full JavaScript
 
-
-## 📖 Content 📖
+## 📖 Content 
 
 [All the theory with the **Jon Mircha** JavaScript course exercises you can see here - it´s in another repository](https://github.com/eugenia1984/learn-JS-with-JonMircha-videos)
 
